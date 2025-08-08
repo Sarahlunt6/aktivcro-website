@@ -1,0 +1,274 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+---
+
+<BaseLayout 
+  title="Resources - Conversion Optimization Guides & Case Studies"
+  description="Free conversion optimization resources, guides, case studies, and industry benchmarks to help you improve your website performance."
+>
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Free <span class="text-accent">Resources</span> & Guides
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Expert insights, proven strategies, and actionable guides to help you optimize your website for maximum conversions.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#guides">
+            Browse Guides
+          </Button>
+          <Button variant="outline" size="lg" href="/calculator">
+            Calculate Your ROI
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Featured Resources -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Featured Resources</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our most popular and effective conversion optimization resources, trusted by thousands of businesses.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Featured Resource 1 -->
+        <Card variant="hover" class="overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-primary-100 to-primary-200 relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <Badge variant="primary">Free Download</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Complete CRO Playbook</h3>
+            <p class="text-gray-600 mb-6">
+              A 50-page guide covering everything from conversion audit methodology to A/B testing best practices.
+            </p>
+            <Button variant="primary" size="sm" class="w-full" href="/downloads/CRO-Playbook-2025.md">View Playbook</Button>
+          </div>
+        </Card>
+
+        <!-- Featured Resource 2 -->
+        <Card variant="hover" class="overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-accent-100 to-accent-200 relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <Badge variant="accent">Free Template</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Industry Benchmark Report</h3>
+            <p class="text-gray-600 mb-6">
+              Current conversion rates and performance metrics across 12 industries, updated quarterly.
+            </p>
+            <Button variant="accent" size="sm" class="w-full" href="/downloads/Industry-Benchmark-Report-2025.md">View Report</Button>
+          </div>
+        </Card>
+
+        <!-- Featured Resource 3 -->
+        <Card variant="hover" class="overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-success-100 to-success-200 relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                  </svg>
+                </div>
+                <Badge variant="success">Free Toolkit</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">A/B Testing Toolkit</h3>
+            <p class="text-gray-600 mb-6">
+              Complete toolkit with test planning templates, statistical calculators, and result analysis guides.
+            </p>
+            <Button variant="success" size="sm" class="w-full" href="/downloads/AB-Testing-Toolkit-2025.md">View Toolkit</Button>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Resource Categories -->
+  <Section id="guides" background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Resource Categories</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Find exactly what you need with our organized collection of conversion optimization resources.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Category 1 -->
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Guides & Playbooks</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Step-by-step guides covering every aspect of conversion optimization.
+          </p>
+          <div class="text-sm text-gray-500 mb-4">12 Resources</div>
+          <Button variant="primary" size="sm" href="/resources/guides">Browse Guides</Button>
+        </Card>
+
+        <!-- Category 2 -->
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Industry Reports</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Data-driven insights and benchmarks for your specific industry.
+          </p>
+          <div class="text-sm text-gray-500 mb-4">8 Reports</div>
+          <Button variant="accent" size="sm" href="/resources/reports">View Reports</Button>
+        </Card>
+
+        <!-- Category 3 -->
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Tools & Templates</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Ready-to-use templates, calculators, and optimization tools.
+          </p>
+          <div class="text-sm text-gray-500 mb-4">15 Tools</div>
+          <Button variant="success" size="sm" href="/resources/tools">Get Tools</Button>
+        </Card>
+
+        <!-- Category 4 -->
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4V2a1 1 0 011-1h8a1 1 0 011 1v2h4a1 1 0 110 2h-1v12a2 2 0 01-2 2H6a2 2 0 01-2-2V6H3a1 1 0 110-2h4zM6 6v12h12V6H6zm3-2V2h6v2H9z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Video Tutorials</h3>
+          <p class="text-gray-600 mb-4 text-sm">
+            Step-by-step video tutorials and implementation walkthroughs.
+          </p>
+          <div class="text-sm text-gray-500 mb-4">20 Videos</div>
+          <Button variant="outline" size="sm" href="/demos">Watch Videos</Button>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+
+  <!-- Newsletter Section -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Stay Updated with CRO Insights</h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Get weekly conversion optimization tips, case studies, and industry insights delivered to your inbox.
+        </p>
+        
+        <Card variant="elevated" class="max-w-2xl mx-auto">
+          <form class="flex flex-col sm:flex-row gap-4" action="/api/newsletter-signup" method="POST">
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Enter your email address"
+              class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+              required
+            >
+            <Button variant="primary" size="lg" type="submit">
+              Subscribe Free
+            </Button>
+          </form>
+          <p class="text-sm text-gray-500 mt-4">
+            Join 5,000+ professionals. Unsubscribe anytime. No spam, ever.
+          </p>
+        </Card>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-8 text-sm text-gray-500">
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Weekly insights
+          </div>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Exclusive case studies
+          </div>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Early access to new tools
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- CTA Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Apply These Insights?
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Put our proven strategies to work for your business. Start with our free tools or schedule a consultation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="/calculator">
+            Calculate Your ROI
+          </Button>
+          <Button variant="outline" size="lg" href="/about#contact">
+            Schedule Consultation
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>
+
+<style>
+  .badge-purple {
+    @apply bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium;
+  }
+</style>

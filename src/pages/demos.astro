@@ -1,0 +1,251 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import DemoHomepageGenerator from '../components/interactive/DemoHomepageGenerator.tsx';
+---
+
+<BaseLayout 
+  title="Live Demos - See AktivCRO Frameworks in Action"
+  description="Experience our intelligent website frameworks with live, interactive demos. See how we transform static websites into conversion-optimized platforms."
+>
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          See Our <span class="text-accent">Frameworks</span> in Action
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Experience how we transform static websites into intelligent, conversion-optimized platforms. Try our interactive demos below.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#demo-generator">
+            Try Homepage Generator
+          </Button>
+          <Button variant="outline" size="lg" href="#framework-demos">
+            View Framework Demos
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Demo Homepage Generator Section -->
+  <section id="demo-generator">
+    <DemoHomepageGenerator client:visible />
+  </section>
+
+  <!-- Framework Demos Section -->
+  <Section id="framework-demos" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Framework Demonstrations</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          See real examples of our four core frameworks and how they drive conversions for different industries.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Authority Framework Demo -->
+        <Card variant="hover" class="overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-primary-100 to-primary-200 relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <Badge variant="primary">Live Demo</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Authority Framework</h3>
+            <p class="text-gray-600 mb-4">
+              Perfect for professional services and consultancies. Features trust indicators, testimonials, and expertise showcases.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4 text-sm text-gray-500">
+                <span>• 45% avg conversion increase</span>
+                <span>• Professional services</span>
+              </div>
+              <Button variant="primary" size="sm">View Demo</Button>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Mobile PWA Framework Demo -->
+        <Card variant="hover" class="overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-accent-100 to-accent-200 relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <Badge variant="accent">Live Demo</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Mobile PWA Framework</h3>
+            <p class="text-gray-600 mb-4">
+              Optimized for mobile-first businesses. Fast loading, app-like experience with offline capabilities.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4 text-sm text-gray-500">
+                <span>• 60% mobile conversion boost</span>
+                <span>• Local services</span>
+              </div>
+              <Button variant="accent" size="sm">View Demo</Button>
+            </div>
+          </div>
+        </Card>
+
+        <!-- CRE Framework Demo -->
+        <Card variant="hover" class="overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-success-100 to-success-200 relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                  </svg>
+                </div>
+                <Badge variant="success">Live Demo</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">CRE Framework</h3>
+            <p class="text-gray-600 mb-4">
+              Designed for real estate professionals. Property showcases, lead capture forms, and market analysis tools.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4 text-sm text-gray-500">
+                <span>• 55% lead generation increase</span>
+                <span>• Real estate</span>
+              </div>
+              <Button variant="success" size="sm">View Demo</Button>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Conversion-Centered Framework Demo -->
+        <Card variant="hover" class="overflow-hidden">
+          <div class="aspect-video bg-gradient-to-br from-purple-100 to-purple-200 relative">
+            <div class="absolute inset-0 flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <Badge variant="purple">Live Demo</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="p-6">
+            <h3 class="text-2xl font-bold mb-3">Conversion-Centered Framework</h3>
+            <p class="text-gray-600 mb-4">
+              Maximum conversion optimization for SaaS and tech companies. A/B tested elements and data-driven design.
+            </p>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center space-x-4 text-sm text-gray-500">
+                <span>• 80% conversion improvement</span>
+                <span>• SaaS & Tech</span>
+              </div>
+              <Button variant="primary" size="sm">View Demo</Button>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Interactive Features Section -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Interactive Demo Features</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Every demo includes these conversion-optimized features that you can test and experience.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Smart CTAs</h3>
+          <p class="text-gray-600">
+            Context-aware call-to-action buttons that adapt based on user behavior and page content.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Live Analytics</h3>
+          <p class="text-gray-600">
+            Real-time conversion tracking and user behavior analysis with instant feedback loops.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">A/B Testing</h3>
+          <p class="text-gray-600">
+            Built-in split testing capabilities to continuously optimize performance and conversions.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- CTA Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Transform Your Website?
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Start with our free demo generator or schedule a consultation to see which framework is perfect for your business.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#demo-generator">
+            Generate Your Demo
+          </Button>
+          <Button variant="outline" size="lg" href="/calculator">
+            Calculate ROI
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>
+
+<style>
+  .badge-purple {
+    @apply bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium;
+  }
+</style>

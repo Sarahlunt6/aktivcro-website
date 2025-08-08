@@ -1,0 +1,119 @@
+---
+// Critical CSS for above-the-fold content
+// This should be inlined to improve First Contentful Paint
+---
+
+<style is:inline>
+/* Critical CSS - Above the fold styles */
+
+/* Font preload */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHiluJLCJSvOjvZDrG.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHiluJLbFZhLIBvC4.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHiluJLbFZhLQBvC4.woff2') format('woff2');
+}
+
+/* Critical layout styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  color: #1f2937;
+}
+
+/* Hero section critical styles */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0 1rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Button critical styles */
+.btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+}
+
+/* Typography critical styles */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 1rem 0;
+}
+
+p {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin: 0 0 1rem 0;
+}
+
+/* Loading states */
+.loading {
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.75rem; }
+  p { font-size: 1rem; }
+  .btn-primary { padding: 0.75rem 1.5rem; }
+}
+</style>

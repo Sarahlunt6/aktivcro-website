@@ -1,0 +1,102 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+---
+
+<BaseLayout 
+  title="Cookie Policy - AktivCRO"
+  description="Learn about how AktivCRO uses cookies and similar technologies on our website."
+>
+  <Section padding="lg">
+    <Container>
+      <div class="max-w-4xl mx-auto prose prose-lg">
+        <h1 class="text-4xl font-bold mb-8">Cookie Policy</h1>
+        <p class="text-gray-600 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
+
+        <h2>1. What Are Cookies</h2>
+        <p>Cookies are small text files stored on your device when you visit our website. They help us provide you with a better experience by remembering your preferences and analyzing how you use our site.</p>
+
+        <h2>2. Types of Cookies We Use</h2>
+        
+        <h3>Essential Cookies</h3>
+        <p>These cookies are necessary for the website to function properly. They enable basic features like page navigation and access to secure areas.</p>
+
+        <h3>Analytics Cookies</h3>
+        <p>We use analytics cookies to understand how visitors interact with our website, helping us improve our services and user experience.</p>
+
+        <h3>Marketing Cookies</h3>
+        <p>These cookies track your browsing activity to show you relevant advertisements and measure the effectiveness of our marketing campaigns.</p>
+
+        <h3>Functional Cookies</h3>
+        <p>Functional cookies remember your preferences and settings to personalize your experience.</p>
+
+        <h2>3. Third-Party Cookies</h2>
+        <p>We may use third-party services that set cookies on our behalf, including:</p>
+        <ul>
+          <li>Google Analytics for website analytics</li>
+          <li>Calendly for appointment scheduling</li>
+          <li>Social media platforms for content sharing</li>
+        </ul>
+
+        <h2>4. Managing Cookies</h2>
+        <p>You can control cookies through your browser settings:</p>
+        <ul>
+          <li><strong>Accept all cookies:</strong> Allow all cookies for the best experience</li>
+          <li><strong>Block all cookies:</strong> Some website features may not work properly</li>
+          <li><strong>Selective blocking:</strong> Choose which types of cookies to allow</li>
+        </ul>
+
+        <h2>5. Browser-Specific Instructions</h2>
+        <p>To manage cookies in popular browsers:</p>
+        <ul>
+          <li><strong>Chrome:</strong> Settings > Privacy and Security > Cookies</li>
+          <li><strong>Firefox:</strong> Preferences > Privacy & Security</li>
+          <li><strong>Safari:</strong> Preferences > Privacy</li>
+          <li><strong>Edge:</strong> Settings > Cookies and site permissions</li>
+        </ul>
+
+        <h2>6. Cookie Duration</h2>
+        <p>We use both session cookies (deleted when you close your browser) and persistent cookies (stored for a specified period or until manually deleted).</p>
+
+        <h2>7. Contact Us</h2>
+        <p>If you have questions about our cookie policy, please contact us:</p>
+        <p>
+          Email: <a href="mailto:hello@aktivcro.com" class="text-primary hover:underline">hello@aktivcro.com</a><br>
+          Website: <a href="https://aktivcro.com" class="text-primary hover:underline">aktivcro.com</a>
+        </p>
+
+        <h2>8. Policy Updates</h2>
+        <p>We may update this Cookie Policy periodically. Please review this page regularly for any changes.</p>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold mt-8 mb-4 text-gray-900;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-semibold mt-6 mb-3 text-gray-800;
+  }
+  
+  .prose ul {
+    @apply list-disc pl-6 mb-4;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+  
+  .prose strong {
+    @apply font-semibold text-gray-900;
+  }
+</style>

@@ -1,0 +1,86 @@
+---
+import Container from './ui/Container.astro';
+import Button from './ui/Button.astro';
+import Logo from './ui/Logo.astro';
+
+const navItems = [
+  { name: 'Home', href: '/' },
+  { name: 'Demos', href: '/demos' },
+  { name: 'Calculator', href: '/calculator' },
+  { name: 'About', href: '/about' },
+  { name: 'Resources', href: '/resources' }
+];
+---
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+  <Container>
+    <nav class="flex items-center justify-between py-4">
+      <!-- Logo -->
+      <a href="/" class="flex-shrink-0">
+        <Logo size="md" />
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center space-x-8">
+        {navItems.map((item) => (
+          <a 
+            href={item.href}
+            class="text-gray-700 hover:text-primary font-medium transition-colors duration-200"
+          >
+            {item.name}
+          </a>
+        ))}
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center">
+        <Button variant="primary" size="sm" href="/#demo">
+          Get Free Demo
+        </Button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button 
+        class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition-colors"
+        id="mobile-menu-button"
+        aria-label="Toggle mobile menu"
+      >
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div 
+      class="md:hidden border-t border-gray-200 py-4 hidden"
+      id="mobile-menu"
+    >
+      <div class="space-y-4">
+        {navItems.map((item) => (
+          <a 
+            href={item.href}
+            class="block text-gray-700 hover:text-primary font-medium transition-colors duration-200"
+          >
+            {item.name}
+          </a>
+        ))}
+        <div class="pt-4 border-t border-gray-200">
+          <Button variant="primary" size="sm" class="w-full" href="/#demo">
+            Get Free Demo
+          </Button>
+        </div>
+      </div>
+    </div>
+  </Container>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>

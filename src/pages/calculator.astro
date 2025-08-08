@@ -1,0 +1,219 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+import Button from '../components/ui/Button.astro';
+import ConversionCalculator from '../components/interactive/ConversionCalculator.tsx';
+---
+
+<BaseLayout 
+  title="ROI Calculator - Calculate Your Conversion Optimization Returns"
+  description="Use our free ROI calculator to estimate how much revenue you could gain with AktivCRO's conversion optimization services. Get instant projections."
+>
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Calculate Your <span class="text-accent">ROI</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          See exactly how much additional revenue you could generate with our conversion optimization services. Get instant, personalized projections.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#calculator">
+            Start Calculator
+          </Button>
+          <Button variant="outline" size="lg" href="/demos">
+            View Live Demos
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Calculator Section -->
+  <section id="calculator">
+    <ConversionCalculator client:visible />
+  </section>
+
+  <!-- Why Use Our Calculator Section -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Why Our Calculator is Different</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our ROI calculator uses real industry data and proven conversion optimization benchmarks to give you accurate projections.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Real Industry Data</h3>
+          <p class="text-gray-600">
+            Based on actual conversion rates and performance metrics from over 500+ optimization projects across different industries.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Instant Results</h3>
+          <p class="text-gray-600">
+            Get immediate projections showing potential revenue increases, conversion improvements, and ROI timelines.
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Personalized Recommendations</h3>
+          <p class="text-gray-600">
+            Receive customized framework suggestions and optimization strategies based on your specific business metrics.
+          </p>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Success Stories Section -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Real Results from Real Clients</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          See how our conversion optimization delivered measurable results for businesses like yours.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Case Study 1 -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center shadow-lg">
+          <div class="text-4xl font-bold text-success mb-2">340%</div>
+          <div class="text-lg font-semibold text-gray-900 mb-2">Conversion Increase</div>
+          <div class="text-gray-600 mb-4">TechFlow Solutions</div>
+          <div class="text-sm text-gray-500">
+            Professional Services • Authority Framework
+          </div>
+        </div>
+
+        <!-- Case Study 2 -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center shadow-lg">
+          <div class="text-4xl font-bold text-primary mb-2">$2.4M</div>
+          <div class="text-lg font-semibold text-gray-900 mb-2">Additional Revenue</div>
+          <div class="text-gray-600 mb-4">GrowthLabs SaaS</div>
+          <div class="text-sm text-gray-500">
+            SaaS & Tech • Conversion-Centered Framework
+          </div>
+        </div>
+
+        <!-- Case Study 3 -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 text-center shadow-lg">
+          <div class="text-4xl font-bold text-accent-700 mb-2">280%</div>
+          <div class="text-lg font-semibold text-gray-900 mb-2">Lead Generation Boost</div>
+          <div class="text-gray-600 mb-4">MetroRealty Group</div>
+          <div class="text-sm text-gray-500">
+            Real Estate • CRE Framework
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Frequently Asked Questions -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Calculator FAQ</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Common questions about our ROI calculator and conversion optimization projections.
+        </p>
+      </div>
+
+      <div class="max-w-4xl mx-auto space-y-6">
+        <details class="bg-white border border-gray-200 rounded-lg p-6">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            How accurate are the ROI projections?
+            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="mt-4 text-gray-600">
+            Our projections are based on real data from 500+ conversion optimization projects. While individual results may vary, our estimates are typically within 15-20% of actual results for similar businesses.
+          </div>
+        </details>
+
+        <details class="bg-white border border-gray-200 rounded-lg p-6">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            What information do I need to provide?
+            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="mt-4 text-gray-600">
+            You'll need basic metrics like monthly website traffic, current conversion rate, average order value, and your industry. All data is kept confidential and used only for calculations.
+          </div>
+        </details>
+
+        <details class="bg-white border border-gray-200 rounded-lg p-6">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            How long does it take to see results?
+            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="mt-4 text-gray-600">
+            Most clients see initial improvements within 2-4 weeks of implementation, with full optimization results typically achieved within 8-12 weeks.
+          </div>
+        </details>
+
+        <details class="bg-white border border-gray-200 rounded-lg p-6">
+          <summary class="font-semibold text-lg cursor-pointer flex justify-between items-center">
+            What if my results don't match the projections?
+            <svg class="w-5 h-5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div class="mt-4 text-gray-600">
+            We offer a 30-day performance guarantee. If you don't see measurable improvement in your conversion metrics within 30 days, we'll continue working at no additional cost until you do.
+          </div>
+        </details>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- CTA Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Turn Projections into Reality?
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Use our calculator to see your potential, then let's make it happen with a free strategy consultation.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#calculator">
+            Calculate Your ROI
+          </Button>
+          <Button variant="outline" size="lg" href="/about#contact">
+            Schedule Consultation
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>

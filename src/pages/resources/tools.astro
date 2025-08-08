@@ -1,0 +1,331 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+---
+
+<BaseLayout 
+  title="CRO Tools & Templates - Conversion Optimization Resources"
+  description="Ready-to-use templates, calculators, and optimization tools. Complete toolkit for A/B testing, planning, and analysis."
+>
+  <!-- Hero Section -->
+  <Section background="success" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          CRO <span class="text-accent">Tools</span> & Templates
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Ready-to-use templates, calculators, and optimization tools to streamline your conversion optimization process.
+        </p>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Featured Toolkit -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Complete A/B Testing Toolkit</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Everything you need to plan, execute, and analyze professional A/B tests for maximum conversion impact.
+        </p>
+      </div>
+
+      <Card variant="elevated" class="max-w-4xl mx-auto">
+        <div class="md:flex items-center">
+          <div class="md:w-1/3 p-6">
+            <div class="aspect-square bg-gradient-to-br from-success-100 to-success-200 rounded-lg flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-20 h-20 bg-success rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+                  </svg>
+                </div>
+                <Badge variant="success">15 Tools</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-2/3 p-6">
+            <h3 class="text-3xl font-bold mb-4">A/B Testing Toolkit 2025</h3>
+            <p class="text-gray-600 mb-6 text-lg">
+              Complete collection of templates, calculators, and guides for running professional A/B tests. Includes test planning templates, statistical calculators, and 100+ test ideas by industry.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <Badge variant="outline">Test Planning</Badge>
+              <Badge variant="outline">Statistical Calculators</Badge>
+              <Badge variant="outline">QA Checklists</Badge>
+              <Badge variant="outline">Analysis Templates</Badge>
+              <Badge variant="outline">100+ Test Ideas</Badge>
+            </div>
+            <Button variant="success" size="lg" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get Complete Toolkit
+            </Button>
+          </div>
+        </div>
+      </Card>
+    </Container>
+  </Section>
+
+  <!-- Tools Categories -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Tool Categories</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Organized tools and templates for every stage of your optimization process.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Planning & Strategy -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h2m0 0h2m0 0h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m0 0V5a1 1 0 011-1h2a1 1 0 011 1v2M9 5a1 1 0 011-1h2a1 1 0 011 1v2m-6 0h6" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Planning & Strategy</h3>
+            <p class="text-gray-600 mb-4">
+              Test planning templates, hypothesis frameworks, and prioritization matrices.
+            </p>
+            <ul class="text-sm text-gray-600 mb-4 space-y-1">
+              <li>• Test Planning Template</li>
+              <li>• Hypothesis Framework</li>
+              <li>• ICE Prioritization Matrix</li>
+              <li>• Testing Roadmap Template</li>
+            </ul>
+            <Button variant="outline" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get Planning Tools
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Calculators -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Statistical Calculators</h3>
+            <p class="text-gray-600 mb-4">
+              Working calculators for sample sizes, significance testing, and ROI impact.
+            </p>
+            <ul class="text-sm text-gray-600 mb-4 space-y-1">
+              <li>• Sample Size Calculator</li>
+              <li>• Significance Calculator</li>
+              <li>• ROI Impact Calculator</li>
+              <li>• Test Duration Estimator</li>
+            </ul>
+            <Button variant="outline" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get Calculators
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Quality Assurance -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Quality Assurance</h3>
+            <p class="text-gray-600 mb-4">
+              Comprehensive checklists to ensure your tests run smoothly and accurately.
+            </p>
+            <ul class="text-sm text-gray-600 mb-4 space-y-1">
+              <li>• Pre-Launch QA Checklist</li>
+              <li>• Test Monitoring Checklist</li>
+              <li>• Browser Testing Guide</li>
+              <li>• Analytics Validation</li>
+            </ul>
+            <Button variant="outline" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get QA Tools
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Analysis & Reporting -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Analysis & Reporting</h3>
+            <p class="text-gray-600 mb-4">
+              Templates for analyzing results and communicating findings effectively.
+            </p>
+            <ul class="text-sm text-gray-600 mb-4 space-y-1">
+              <li>• Results Analysis Template</li>
+              <li>• Executive Report Template</li>
+              <li>• Learning Documentation</li>
+              <li>• ROI Calculation Guide</li>
+            </ul>
+            <Button variant="outline" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get Analysis Tools
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Test Ideas -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Test Ideas Library</h3>
+            <p class="text-gray-600 mb-4">
+              100+ proven test ideas organized by industry, page type, and seasonal calendar.
+            </p>
+            <ul class="text-sm text-gray-600 mb-4 space-y-1">
+              <li>• Homepage Optimization (25 ideas)</li>
+              <li>• E-commerce Tests (45 ideas)</li>
+              <li>• Landing Page Tests (30 ideas)</li>
+              <li>• Seasonal Testing Calendar</li>
+            </ul>
+            <Button variant="outline" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get Test Ideas
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Conversion Calculator -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">ROI Calculator</h3>
+            <p class="text-gray-600 mb-4">
+              Interactive tool to calculate the potential ROI of your conversion optimization efforts.
+            </p>
+            <ul class="text-sm text-gray-600 mb-4 space-y-1">
+              <li>• Revenue impact modeling</li>
+              <li>• Cost-benefit analysis</li>
+              <li>• Scenario planning</li>
+              <li>• Investment justification</li>
+            </ul>
+            <Button variant="outline" size="sm" href="/calculator">
+              Use ROI Calculator
+            </Button>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Popular Tools -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Most Popular Tools</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          The tools and templates our clients use most frequently for conversion optimization.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Sample Size Calculator -->
+        <Card variant="outlined">
+          <div class="p-8">
+            <div class="flex items-center mb-4">
+              <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Sample Size Calculator</h3>
+                <Badge variant="success" class="text-xs">Most Popular</Badge>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Calculate the exact number of visitors needed for statistically significant A/B test results. Includes quick reference tables for common scenarios.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+              <div class="text-xs text-gray-600 mb-1">Quick Reference (95% confidence, 80% power)</div>
+              <div class="text-sm font-mono">
+                1% baseline, 20% lift: 9,500 visitors<br>
+                2% baseline, 20% lift: 4,750 visitors<br>
+                5% baseline, 20% lift: 1,900 visitors
+              </div>
+            </div>
+            <Button variant="primary" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get Calculator
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Test Planning Template -->
+        <Card variant="outlined">
+          <div class="p-8">
+            <div class="flex items-center mb-4">
+              <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v6a2 2 0 002 2h2m0 0h2m0 0h2a2 2 0 002-2V7a2 2 0 00-2-2h-2m0 0V5a1 1 0 011-1h2a1 1 0 011 1v2M9 5a1 1 0 011-1h2a1 1 0 011 1v2m-6 0h6" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold">Test Planning Template</h3>
+                <Badge variant="primary" class="text-xs">Essential</Badge>
+              </div>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Comprehensive template covering hypothesis formation, success metrics, technical requirements, and implementation details for organized test execution.
+            </p>
+            <div class="bg-gray-50 p-4 rounded-lg mb-4">
+              <div class="text-xs text-gray-600 mb-1">Template Includes</div>
+              <div class="text-sm">
+                • Hypothesis framework (If-Then-Because)<br>
+                • Success metrics definition<br>
+                • Technical implementation details<br>
+                • QA checklist integration
+              </div>
+            </div>
+            <Button variant="primary" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Get Template
+            </Button>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- CTA Section -->
+  <Section background="success" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Get All the Tools You Need
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Download the complete A/B Testing Toolkit with 15 tools, templates, and calculators to streamline your optimization process.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="/downloads/AB-Testing-Toolkit-2025.md">
+            Download Complete Toolkit
+          </Button>
+          <Button variant="outline" size="lg" href="/calculator">
+            Calculate Your ROI
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>

@@ -1,0 +1,454 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+---
+
+<BaseLayout 
+  title="A/B Testing Toolkit - Templates, Calculators & Guides"
+  description="Complete A/B testing toolkit with planning templates, statistical calculators, result analysis guides, and implementation checklists."
+>
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <Badge variant="accent" class="mb-6">Complete Toolkit • 8 Tools Included</Badge>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          A/B Testing <span class="text-accent">Toolkit</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Everything you need to design, execute, and analyze successful A/B tests. Includes templates, calculators, checklists, and step-by-step guides.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#download">
+            Download Toolkit
+          </Button>
+          <Button variant="outline" size="lg" href="#tools">
+            See What's Included
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Toolkit Overview -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">8 Essential A/B Testing Tools</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          From planning your first test to analyzing complex multivariate results, this toolkit has everything you need.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m0 0V2a1 1 0 011-1h1a1 1 0 011 1v3" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Test Planning Template</h3>
+          <p class="text-sm text-gray-600">Hypothesis framework and test documentation</p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Sample Size Calculator</h3>
+          <p class="text-sm text-gray-600">Determine required traffic for statistical power</p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Statistical Significance Calculator</h3>
+          <p class="text-sm text-gray-600">Real-time test result analysis</p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Test Ideas Library</h3>
+          <p class="text-sm text-gray-600">100+ proven test concepts by industry</p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">QA Checklist</h3>
+          <p class="text-sm text-gray-600">Pre-launch testing and validation steps</p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Results Report Template</h3>
+          <p class="text-sm text-gray-600">Professional reporting and presentation format</p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">ROI Calculator</h3>
+          <p class="text-sm text-gray-600">Calculate business impact and revenue lift</p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="text-lg font-bold mb-2">Testing Process Guide</h3>
+          <p class="text-sm text-gray-600">Step-by-step implementation methodology</p>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Detailed Tool Breakdown -->
+  <Section id="tools" background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">What's Inside Each Tool</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Detailed breakdown of every template, calculator, and guide included in your toolkit.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <!-- Planning & Setup Tools -->
+        <Card variant="elevated">
+          <h3 class="text-2xl font-bold mb-6 text-primary flex items-center">
+            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+            </svg>
+            Planning & Setup
+          </h3>
+          
+          <div class="space-y-6">
+            <div class="border-l-4 border-primary pl-4">
+              <h4 class="font-bold mb-2">Test Planning Template</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Hypothesis framework (If/Then/Because)</li>
+                <li>• Success metrics definition</li>
+                <li>• Target audience segmentation</li>
+                <li>• Timeline and resource planning</li>
+                <li>• Risk assessment checklist</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-primary pl-4">
+              <h4 class="font-bold mb-2">Sample Size Calculator</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Statistical power calculation (80%, 90%, 95%)</li>
+                <li>• Minimum detectable effect sizing</li>
+                <li>• Traffic requirement estimation</li>
+                <li>• Test duration forecasting</li>
+                <li>• Multiple variant calculations</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-primary pl-4">
+              <h4 class="font-bold mb-2">QA Checklist</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Cross-browser compatibility testing</li>
+                <li>• Mobile device validation</li>
+                <li>• Analytics tracking verification</li>
+                <li>• Performance impact assessment</li>
+                <li>• Legal and compliance review</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Analysis & Results Tools -->
+        <Card variant="elevated">
+          <h3 class="text-2xl font-bold mb-6 text-success flex items-center">
+            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+            Analysis & Results
+          </h3>
+          
+          <div class="space-y-6">
+            <div class="border-l-4 border-success pl-4">
+              <h4 class="font-bold mb-2">Statistical Significance Calculator</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Real-time p-value calculation</li>
+                <li>• Confidence interval estimation</li>
+                <li>• Z-score and t-test analysis</li>
+                <li>• Multiple comparison corrections</li>
+                <li>• Bayesian probability calculations</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-success pl-4">
+              <h4 class="font-bold mb-2">Results Report Template</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Executive summary format</li>
+                <li>• Visual data presentation templates</li>
+                <li>• Stakeholder communication guide</li>
+                <li>• Implementation recommendations</li>
+                <li>• Follow-up test suggestions</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-success pl-4">
+              <h4 class="font-bold mb-2">ROI Calculator</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Revenue impact calculation</li>
+                <li>• Customer lifetime value analysis</li>
+                <li>• Testing program cost assessment</li>
+                <li>• Long-term projection modeling</li>
+                <li>• Business case builder</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Test Ideas & Strategy -->
+        <Card variant="elevated">
+          <h3 class="text-2xl font-bold mb-6 text-accent-700 flex items-center">
+            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+            Test Ideas & Strategy
+          </h3>
+          
+          <div class="space-y-6">
+            <div class="border-l-4 border-accent-600 pl-4">
+              <h4 class="font-bold mb-2">Test Ideas Library</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• 100+ proven test concepts</li>
+                <li>• Industry-specific recommendations</li>
+                <li>• Page-type optimization ideas</li>
+                <li>• Seasonal and campaign-based tests</li>
+                <li>• Progressive enhancement strategies</li>
+              </ul>
+            </div>
+
+            <div class="border-l-4 border-accent-600 pl-4">
+              <h4 class="font-bold mb-2">Testing Process Guide</h4>
+              <ul class="text-sm text-gray-600 space-y-1">
+                <li>• Complete methodology walkthrough</li>
+                <li>• Team roles and responsibilities</li>
+                <li>• Tool selection and setup guide</li>
+                <li>• Scaling your testing program</li>
+                <li>• Advanced testing techniques</li>
+              </ul>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Bonus Resources -->
+        <Card variant="elevated" class="border-2 border-accent-200">
+          <div class="flex items-center mb-4">
+            <Badge variant="accent" class="mr-3">Bonus</Badge>
+            <h3 class="text-2xl font-bold text-accent-700">Additional Resources</h3>
+          </div>
+          
+          <div class="space-y-4">
+            <div class="bg-accent-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2 text-accent-800">Video Walkthrough Series</h4>
+              <p class="text-sm text-accent-700">6 tutorial videos showing how to use each tool effectively</p>
+            </div>
+
+            <div class="bg-primary-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2 text-primary-800">Industry Benchmarks</h4>
+              <p class="text-sm text-primary-700">Conversion rate benchmarks for 12+ industries to set realistic test goals</p>
+            </div>
+
+            <div class="bg-success-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2 text-success-800">Email Templates</h4>
+              <p class="text-sm text-success-700">Pre-written emails for stakeholder updates and result sharing</p>
+            </div>
+
+            <div class="bg-purple-50 p-4 rounded-lg">
+              <h4 class="font-bold mb-2 text-purple-800">Tool Integration Guide</h4>
+              <p class="text-sm text-purple-700">How to connect these tools with popular testing platforms</p>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Success Stories -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Success Stories</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          See how teams are using this toolkit to run better tests and get better results.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <Card variant="hover">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+              <span class="text-primary font-bold">TM</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Tom Martinez</h4>
+              <p class="text-sm text-gray-600">Growth Manager, SaaS Startup</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "The sample size calculator alone saved us from running underpowered tests. We've increased our test velocity by 40% while maintaining statistical rigor."
+          </p>
+          <div class="flex items-center text-sm text-gray-500">
+            <span class="font-medium text-success">+127% conversion increase</span>
+            <span class="mx-2">•</span>
+            <span>in 3 months</span>
+          </div>
+        </Card>
+
+        <Card variant="hover">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center mr-4">
+              <span class="text-success font-bold">AL</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Amy Liu</h4>
+              <p class="text-sm text-gray-600">Director of CRO, E-commerce</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "The test ideas library is a goldmine. We implemented 12 tests from their e-commerce section and saw consistent 15-30% improvements across product pages."
+          </p>
+          <div class="flex items-center text-sm text-gray-500">
+            <span class="font-medium text-success">+$2.3M revenue</span>
+            <span class="mx-2">•</span>
+            <span>from Q4 tests</span>
+          </div>
+        </Card>
+
+        <Card variant="hover">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+              <span class="text-accent-700 font-bold">DK</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">David Kim</h4>
+              <p class="text-sm text-gray-600">Marketing Lead, B2B Services</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "The reporting template helped me communicate results to leadership effectively. We got budget approval for a full CRO program based on our first test report."
+          </p>
+          <div class="flex items-center text-sm text-gray-500">
+            <span class="font-medium text-success">$150K budget approved</span>
+            <span class="mx-2">•</span>
+            <span>for CRO program</span>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Download Section -->
+  <Section id="download" background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Download Your A/B Testing Toolkit
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Everything you need to run professional A/B tests that drive real business results. Start testing like a pro today.
+        </p>
+        
+        <Card variant="elevated" class="max-w-2xl mx-auto text-gray-900">
+          <form class="space-y-6" action="/api/download-ab-toolkit" method="POST">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input 
+                type="text" 
+                name="firstName"
+                placeholder="First Name"
+                class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                required
+              >
+              <input 
+                type="text" 
+                name="lastName"
+                placeholder="Last Name"
+                class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                required
+              >
+            </div>
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Work Email Address"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+              required
+            >
+            <select 
+              name="experience"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+              required
+            >
+              <option value="">Your A/B Testing Experience</option>
+              <option value="beginner">Just getting started</option>
+              <option value="intermediate">Run tests occasionally</option>
+              <option value="advanced">Regular testing program</option>
+              <option value="expert">Advanced practitioner</option>
+            </select>
+            <Button variant="accent" size="lg" type="submit" class="w-full">
+              Download Complete Toolkit
+            </Button>
+          </form>
+          <p class="text-sm text-gray-500 mt-4">
+            Includes all 8 tools plus bonus resources. We'll also send you advanced testing tips and case studies.
+          </p>
+        </Card>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-8 text-sm opacity-90">
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            8 professional tools
+          </div>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Instant download
+          </div>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Bonus video tutorials
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>

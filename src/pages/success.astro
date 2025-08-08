@@ -1,0 +1,210 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+
+// Get query parameters
+const sessionId = Astro.url.searchParams.get('session_id');
+const tier = Astro.url.searchParams.get('tier');
+
+// Tier information for display
+const tierInfo = {
+  foundation: {
+    name: 'Foundation Package',
+    price: '$5,000',
+    nextSteps: [
+      'Our team will contact you within 24 hours',
+      'Framework selection consultation call',
+      'Project timeline and milestone planning',
+      'Implementation begins within 5 business days'
+    ]
+  },
+  growth: {
+    name: 'Growth Package', 
+    price: '$5,000',
+    nextSteps: [
+      'Dedicated account manager assigned',
+      'Comprehensive website audit and analysis',
+      'Custom micro-experience planning session',
+      'Implementation roadmap delivery'
+    ]
+  },
+  enterprise: {
+    name: 'Enterprise Platform',
+    price: '$15,000',
+    nextSteps: [
+      'Executive onboarding call scheduled',
+      'Dedicated success manager introduction',
+      'Complete platform architecture planning',
+      'Priority implementation track initiated'
+    ]
+  }
+};
+
+const currentTier = tierInfo[tier as keyof typeof tierInfo] || tierInfo.foundation;
+---
+
+<BaseLayout 
+  title="Payment Successful - Welcome to AktivCRO!"
+  description="Thank you for your purchase! Your AktivCRO transformation journey begins now."
+>
+  <!-- Success Hero -->
+  <Section padding="lg" background="primary">
+    <Container>
+      <div class="text-center text-white">
+        <div class="w-24 h-24 bg-success rounded-full flex items-center justify-center mx-auto mb-8">
+          <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+          </svg>
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">
+          Welcome to AktivCRO! 🎉
+        </h1>
+        
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Your payment was successful. Your {currentTier.name} is confirmed and your website transformation journey begins now!
+        </p>
+        
+        {sessionId && (
+          <div class="bg-white/10 rounded-lg p-4 inline-block mb-8">
+            <p class="text-sm opacity-75">Order Reference</p>
+            <p class="font-mono text-sm">{sessionId.slice(-12)}</p>
+          </div>
+        )}
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Order Summary -->
+  <Section padding="md">
+    <Container>
+      <div class="max-w-4xl mx-auto">
+        <Card variant="elevated" class="mb-12">
+          <div class="grid md:grid-cols-2 gap-8">
+            <!-- Order Details -->
+            <div>
+              <h2 class="text-2xl font-bold mb-6">Order Summary</h2>
+              <div class="space-y-4">
+                <div class="flex justify-between items-center pb-4 border-b">
+                  <span class="font-medium">{currentTier.name}</span>
+                  <span class="text-xl font-bold text-primary">{currentTier.price}</span>
+                </div>
+                <div class="space-y-2 text-sm text-gray-600">
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    30-Day Performance Guarantee
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    Dedicated Implementation Support
+                  </div>
+                  <div class="flex items-center">
+                    <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    Priority Customer Support
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- What's Next -->
+            <div>
+              <h2 class="text-2xl font-bold mb-6">What Happens Next?</h2>
+              <div class="space-y-4">
+                {currentTier.nextSteps.map((step, index) => (
+                  <div class="flex items-start">
+                    <div class="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center text-sm font-bold mr-4 mt-0.5 flex-shrink-0">
+                      {index + 1}
+                    </div>
+                    <div>
+                      <p class="text-gray-700">{step}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </Card>
+
+        <!-- Important Information -->
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+          <Card variant="outlined">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">Check Your Email</h3>
+              <p class="text-gray-600 text-sm">
+                We've sent a detailed confirmation email with your receipt and next steps. 
+                Please check your inbox (and spam folder) for important updates.
+              </p>
+            </div>
+          </Card>
+
+          <Card variant="outlined">
+            <div class="text-center">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-2">24-Hour Contact</h3>
+              <p class="text-gray-600 text-sm">
+                Our team will reach out within 24 hours to schedule your onboarding call 
+                and begin the transformation process.
+              </p>
+            </div>
+          </Card>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="text-center space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="primary" size="lg" href="https://calendly.com/aktivcro/onboarding-call">
+              Schedule Onboarding Call
+            </Button>
+            <Button variant="secondary" size="lg" href="/resources">
+              Access Resources
+            </Button>
+          </div>
+          
+          <p class="text-sm text-gray-500">
+            Have questions? Email us at <a href="mailto:hello@aktivcro.com" class="text-primary hover:underline">hello@aktivcro.com</a> 
+            or call <a href="tel:+1-555-123-4567" class="text-primary hover:underline">(555) 123-4567</a>
+          </p>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Testimonial -->
+  <Section background="gray" padding="md">
+    <Container>
+      <div class="max-w-4xl mx-auto text-center">
+        <blockquote class="text-2xl font-medium text-gray-900 mb-6">
+          "The AktivCRO team transformed our website and increased our conversion rate by 340% in just 8 weeks. 
+          The ROI was incredible and the process was seamless."
+        </blockquote>
+        <div class="flex items-center justify-center">
+          <div class="w-12 h-12 bg-gray-300 rounded-full mr-4"></div>
+          <div class="text-left">
+            <div class="font-semibold text-gray-900">Sarah Johnson</div>
+            <div class="text-gray-600 text-sm">CEO, TechFlow Solutions</div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>

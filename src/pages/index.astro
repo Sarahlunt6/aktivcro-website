@@ -1,0 +1,86 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
+import AnimatedHero from '../components/interactive/AnimatedHero.tsx';
+import ValuePropositionSection from '../components/interactive/ValuePropositionSection.tsx';
+import FrameworkShowcase from '../components/interactive/FrameworkShowcase.tsx';
+import DemoHomepageGenerator from '../components/interactive/DemoHomepageGenerator.tsx';
+import ConversionCalculator from '../components/interactive/ConversionCalculator.tsx';
+import PricingSection from '../components/interactive/PricingSection.tsx';
+---
+
+<BaseLayout 
+	title="AktivCRO - Transform Your Website Into an Intelligent Problem-Solving Platform"
+	description="Systematic conversion optimization + instant value delivery = 200-400% more leads. Experience the power of intelligent website frameworks."
+>
+		<!-- Animated Hero Section -->
+		<AnimatedHero client:load />
+
+		<!-- Value Proposition Section -->
+		<ValuePropositionSection client:visible={{ rootMargin: "100px" }} />
+
+		<!-- Framework Showcase Section -->
+		<FrameworkShowcase client:visible={{ rootMargin: "100px" }} />
+
+		<!-- Demo Homepage Generator Section -->
+		<DemoHomepageGenerator client:visible={{ rootMargin: "150px" }} />
+
+		<!-- Conversion Calculator Section -->
+		<ConversionCalculator client:visible={{ rootMargin: "150px" }} />
+
+		<!-- Pricing Section -->
+		<PricingSection client:visible={{ rootMargin: "200px" }} />
+
+		<!-- Component Showcase Section -->
+		<Section background="gray" padding="md">
+			<Container>
+				<h2 class="text-3xl font-bold text-center mb-12">Built with Performance in Mind</h2>
+				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+					<Card variant="hover">
+						<div class="text-center">
+							<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+								<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+								</svg>
+							</div>
+							<h3 class="text-xl font-semibold mb-4">Lightning Fast</h3>
+							<p class="text-gray-600 mb-4">Astro-powered with zero JavaScript by default. Only interactive components load JS when needed.</p>
+							<Badge variant="success">< 3s Load Time</Badge>
+						</div>
+					</Card>
+
+					<Card variant="hover">
+						<div class="text-center">
+							<div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+								<svg class="w-6 h-6 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+								</svg>
+							</div>
+							<h3 class="text-xl font-semibold mb-4">Mobile First</h3>
+							<p class="text-gray-600 mb-4">Responsive design with Poppins typography and smooth animations across all devices.</p>
+							<Badge variant="primary">95+ Mobile Score</Badge>
+						</div>
+					</Card>
+
+					<Card variant="hover">
+						<div class="text-center">
+							<div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+								<svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+								</svg>
+							</div>
+							<h3 class="text-xl font-semibold mb-4">Conversion Focused</h3>
+							<p class="text-gray-600 mb-4">Every element designed with conversion optimization and user experience in mind.</p>
+							<Badge variant="success">5-10% Conversion Rate</Badge>
+						</div>
+					</Card>
+				</div>
+			</Container>
+		</Section>
+</BaseLayout>

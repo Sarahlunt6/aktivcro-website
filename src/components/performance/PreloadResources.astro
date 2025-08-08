@@ -1,0 +1,93 @@
+---
+// Preload critical resources for better performance
+const { priorityHints = true } = Astro.props;
+---
+
+<!-- Preload critical fonts -->
+<link 
+  rel="preload" 
+  href="https://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHiluJLCJSvOjvZDrG.woff2" 
+  as="font" 
+  type="font/woff2" 
+  crossorigin="anonymous"
+>
+<link 
+  rel="preload" 
+  href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHiluJLbFZhLIBvC4.woff2" 
+  as="font" 
+  type="font/woff2" 
+  crossorigin="anonymous"
+>
+<link 
+  rel="preload" 
+  href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHiluJLbFZhLQBvC4.woff2" 
+  as="font" 
+  type="font/woff2" 
+  crossorigin="anonymous"
+>
+
+<!-- DNS prefetch for external resources -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//fonts.gstatic.com">
+<link rel="dns-prefetch" href="//js.stripe.com">
+
+<!-- Preconnect to critical third-party origins -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{priorityHints && (
+  <>
+    <!-- Priority hints for modern browsers -->
+    <link rel="modulepreload" href="/src/components/interactive/AnimatedHero.tsx">
+    <link rel="modulepreload" href="/src/components/interactive/ValuePropositionSection.tsx">
+  </>
+)}
+
+<!-- Prefetch likely next pages -->
+<link rel="prefetch" href="/success">
+
+<!-- Resource hints for better performance -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Performance optimizations -->
+<script>
+  // Critical resource loading optimization
+  (function() {
+    // Preload critical images
+    const criticalImages = [
+      // Add paths to critical above-the-fold images here
+    ];
+    
+    criticalImages.forEach(src => {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = src;
+      document.head.appendChild(link);
+    });
+    
+    // Early font loading
+    if ('fontDisplay' in document.documentElement.style) {
+      document.documentElement.style.setProperty('--font-display', 'swap');
+    }
+  })();
+</script>
+
+<style>
+  /* Prevent layout shift for loading states */
+  [data-loading] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  [data-loaded] {
+    opacity: 1;
+  }
+  
+  /* Optimize font loading */
+  @font-face {
+    font-family: 'Poppins';
+    font-display: var(--font-display, swap);
+  }
+</style>

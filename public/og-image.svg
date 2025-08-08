@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+    <defs>
+        <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#20466f;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#1a3d61;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#ffd147;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ffb700;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    
+    <!-- Background -->
+    <rect width="1200" height="630" fill="url(#bgGrad)" />
+    
+    <!-- Background Pattern -->
+    <g opacity="0.1">
+        <circle cx="100" cy="100" r="50" fill="#ffd147" />
+        <circle cx="1100" cy="150" r="30" fill="#ffd147" />
+        <circle cx="200" cy="500" r="40" fill="#ffd147" />
+        <circle cx="1000" cy="450" r="35" fill="#ffd147" />
+    </g>
+    
+    <!-- Main Content -->
+    <g transform="translate(100, 150)">
+        <!-- Logo -->
+        <g transform="scale(1.5)">
+            <path d="M32 10 L45 35 L40 35 L38 30 L26 30 L24 35 L19 35 L32 10 Z M29 25 L35 25 L32 18 L29 25 Z" fill="url(#accentGrad)" />
+            <!-- Optimization arrow -->
+            <path d="M50 45 L55 40 L52 37 L62 37 L62 47 L59 44 L54 49 L50 45 Z" fill="#ffd147" />
+        </g>
+        
+        <!-- Main Headline -->
+        <text x="0" y="120" fill="white" font-family="Arial, sans-serif" font-size="72" font-weight="900">
+            AktivCRO
+        </text>
+        
+        <!-- Subheading -->
+        <text x="0" y="180" fill="#ffd147" font-family="Arial, sans-serif" font-size="36" font-weight="600">
+            Stop Losing 95% of Your Visitors
+        </text>
+        
+        <!-- Value Proposition -->
+        <text x="0" y="230" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="400">
+            Transform Your Website Into a Lead Generation Machine
+        </text>
+        
+        <!-- Stats -->
+        <g transform="translate(0, 280)">
+            <text x="0" y="0" fill="#10b981" font-family="Arial, sans-serif" font-size="24" font-weight="700">
+                200-400% More Leads
+            </text>
+            <text x="300" y="0" fill="#10b981" font-family="Arial, sans-serif" font-size="24" font-weight="700">
+                30-Day Guarantee
+            </text>
+            <text x="550" y="0" fill="#10b981" font-family="Arial, sans-serif" font-size="24" font-weight="700">
+                4 Proven Frameworks
+            </text>
+        </g>
+    </g>
+    
+    <!-- CTA -->
+    <g transform="translate(800, 400)">
+        <rect x="0" y="0" width="300" height="80" rx="40" fill="url(#accentGrad)" />
+        <text x="150" y="50" fill="#20466f" font-family="Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle" dominant-baseline="middle">
+            Get Free Demo
+        </text>
+    </g>
+</svg>

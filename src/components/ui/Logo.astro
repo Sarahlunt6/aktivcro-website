@@ -1,0 +1,36 @@
+---
+export interface Props {
+  size?: 'sm' | 'md' | 'lg';
+  class?: string;
+}
+
+const { 
+  size = 'md',
+  class: className = '',
+  ...rest 
+} = Astro.props;
+
+const sizes = {
+  sm: 'h-8',
+  md: 'h-10',
+  lg: 'h-12'
+};
+
+const classes = `${sizes[size]} ${className}`;
+---
+
+<div class={`flex items-center ${classes}`} {...rest}>
+  <div class="flex items-center space-x-2">
+    <!-- Logo Icon -->
+    <div class="bg-gradient-primary rounded-lg p-2 flex items-center justify-center">
+      <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
+    </div>
+    <!-- Logo Text -->
+    <div class="flex flex-col">
+      <span class="text-xl font-bold text-primary">AktivCRO</span>
+      <span class="text-xs text-gray-500 -mt-1 hidden sm:block">Conversion Optimization</span>
+    </div>
+  </div>
+</div>

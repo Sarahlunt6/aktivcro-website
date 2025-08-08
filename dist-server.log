@@ -1,0 +1,1019 @@
+::1 - - [04/Aug/2025 12:14:15] "HEAD / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET /_astro/about.BnX49w-P.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] code 404, message File not found
+::1 - - [04/Aug/2025 12:14:36] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 12:14:36] code 404, message File not found
+::1 - - [04/Aug/2025 12:14:36] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 12:14:36] "GET /success HTTP/1.1" 301 -
+::1 - - [04/Aug/2025 12:14:36] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:36] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:14:37] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:15:06] "GET /resources HTTP/1.1" 301 -
+::1 - - [04/Aug/2025 12:15:06] "GET /resources/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 12:15:06] code 404, message File not found
+::1 - - [04/Aug/2025 12:15:06] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 12:15:06] code 404, message File not found
+::1 - - [04/Aug/2025 12:15:06] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 12:20:14] code 404, message File not found
+::1 - - [04/Aug/2025 12:20:14] "GET /resources/ab-testing-toolkit HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 12:20:14] code 404, message File not found
+::1 - - [04/Aug/2025 12:20:14] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:15:54] code 404, message File not found
+::1 - - [04/Aug/2025 13:15:54] "GET /resources/ab-testing-toolkit HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:16:04] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] code 404, message File not found
+::1 - - [04/Aug/2025 13:16:04] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:16:04] code 404, message File not found
+::1 - - [04/Aug/2025 13:16:04] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:16:04] "GET /_astro/about.BnX49w-P.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:04] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:16:10] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:16:11] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:16:11] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:16:11] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:16:12] "GET /_astro/PricingSection.D35U0aQn.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:18:42] "GET /resources/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:18:42] code 404, message File not found
+::1 - - [04/Aug/2025 13:18:42] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:18:42] code 404, message File not found
+::1 - - [04/Aug/2025 13:18:42] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:26:15] "GET /resources/cro-playbook HTTP/1.1" 301 -
+::1 - - [04/Aug/2025 13:26:15] "GET /resources/cro-playbook/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:26:15] code 404, message File not found
+::1 - - [04/Aug/2025 13:26:15] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:26:15] code 404, message File not found
+::1 - - [04/Aug/2025 13:26:15] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:26:15] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:26:15] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:26:26] "GET /resources/industry-benchmark-report HTTP/1.1" 301 -
+::1 - - [04/Aug/2025 13:26:26] "GET /resources/industry-benchmark-report/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:26:26] code 404, message File not found
+::1 - - [04/Aug/2025 13:26:26] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:26:26] code 404, message File not found
+::1 - - [04/Aug/2025 13:26:26] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:26:26] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:26:26] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:26:54] "GET /resources/ab-testing-toolkit HTTP/1.1" 301 -
+::1 - - [04/Aug/2025 13:26:54] "GET /resources/ab-testing-toolkit/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 13:26:54] code 404, message File not found
+::1 - - [04/Aug/2025 13:26:54] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:26:54] code 404, message File not found
+::1 - - [04/Aug/2025 13:26:54] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:26:54] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:26:54] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:58:02] "GET /resources/cro-playbook/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:58:02] code 404, message File not found
+::1 - - [04/Aug/2025 13:58:02] code 404, message File not found
+::1 - - [04/Aug/2025 13:58:02] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:58:02] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:58:02] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:58:02] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:58:06] "GET /resources/industry-benchmark-report/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 13:58:06] code 404, message File not found
+::1 - - [04/Aug/2025 13:58:06] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 13:58:06] code 404, message File not found
+::1 - - [04/Aug/2025 13:58:06] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:08:40] "GET /resources/cro-playbook/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:08:40] code 404, message File not found
+::1 - - [04/Aug/2025 15:08:40] code 404, message File not found
+::1 - - [04/Aug/2025 15:08:40] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:08:40] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:08:40] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:08:40] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:08:50] "GET /resources/ab-testing-toolkit/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:08:50] code 404, message File not found
+::1 - - [04/Aug/2025 15:08:50] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:08:50] code 404, message File not found
+::1 - - [04/Aug/2025 15:08:50] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:08:50] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:08:50] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:09:24] "GET /resources/ab-testing-toolkit/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:09:24] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:24] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:24] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:24] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:24] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:09:24] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:09:25] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:26] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:27] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:27] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:27] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:27] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:27] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:27] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:27] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:27] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:27] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:27] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:29] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:09:29] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:29] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:29] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:29] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:36] "GET /resources/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:09:36] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:36] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:36] code 404, message File not found
+::1 - - [04/Aug/2025 15:09:36] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:09:36] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:09:36] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:09:39] "GET /downloads/CRO-Playbook-2025.md HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:17:40] "GET /downloads/Industry-Benchmark-Report-2025.md HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:18:21] "GET /resources/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:18:21] code 404, message File not found
+::1 - - [04/Aug/2025 15:18:21] code 404, message File not found
+::1 - - [04/Aug/2025 15:18:21] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:18:21] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:18:21] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:18:21] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:18:22] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:18:24] "GET /downloads/AB-Testing-Toolkit-2025.md HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:21:00] "GET /resources/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:21:00] code 404, message File not found
+::1 - - [04/Aug/2025 15:21:00] code 404, message File not found
+::1 - - [04/Aug/2025 15:21:00] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:21:00] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:21:00] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:21:00] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:21:01] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:21:04] "GET /downloads/AB-Testing-Toolkit-2025.md HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:21:35] "GET /downloads/Industry-Benchmark-Report-2025.md HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:28:39] code 404, message File not found
+::1 - - [04/Aug/2025 15:28:39] "GET /resources/ HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:28:45] code 404, message File not found
+::1 - - [04/Aug/2025 15:28:45] "GET /favicon.svg HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:28:45] code 404, message File not found
+::1 - - [04/Aug/2025 15:28:45] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:28:48] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:28:51] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:18] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:18] code 404, message File not found
+::1 - - [04/Aug/2025 15:29:18] code 404, message File not found
+::1 - - [04/Aug/2025 15:29:18] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:29:18] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:29:18] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:18] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:18] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:18] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:18] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:18] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:19] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:19] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:21] "GET /resources/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:29:21] code 404, message File not found
+::1 - - [04/Aug/2025 15:29:21] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:29:21] code 404, message File not found
+::1 - - [04/Aug/2025 15:29:21] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:29:21] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:29:21] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 15:29:24] "GET /downloads/Industry-Benchmark-Report-2025.md HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:48:21] "GET /resources/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:48:21] code 404, message File not found
+::1 - - [04/Aug/2025 15:48:21] code 404, message File not found
+::1 - - [04/Aug/2025 15:48:21] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:48:21] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:48:21] "GET /_astro/about.G5Wemkrz.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:48:21] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:48:30] code 404, message File not found
+::1 - - [04/Aug/2025 15:48:30] "GET /resources/guides HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:50:25] code 404, message File not found
+::1 - - [04/Aug/2025 15:50:25] "GET /resources/guides HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:59:18] "GET /resources/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:59:18] code 404, message File not found
+::1 - - [04/Aug/2025 15:59:18] code 404, message File not found
+::1 - - [04/Aug/2025 15:59:18] "GET /_astro/about.BgVU_wJK.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 15:59:18] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:59:18] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 15:59:18] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:23] "GET /resources/guides HTTP/1.1" 301 -
+::1 - - [04/Aug/2025 16:05:23] "GET /resources/guides/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:23] code 404, message File not found
+::1 - - [04/Aug/2025 16:05:24] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:05:24] code 404, message File not found
+::1 - - [04/Aug/2025 16:05:24] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:05:24] "GET /_astro/about.BgVU_wJK.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:05:24] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:05:35] "GET /resources/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:05:35] code 404, message File not found
+::1 - - [04/Aug/2025 16:05:35] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:05:35] code 404, message File not found
+::1 - - [04/Aug/2025 16:05:35] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:05:39] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:39] code 404, message File not found
+::1 - - [04/Aug/2025 16:05:39] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:05:39] code 404, message File not found
+::1 - - [04/Aug/2025 16:05:39] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:05:39] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:39] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:39] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:39] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:39] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:39] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:05:58] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:06:00] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:06:00] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:06:08] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:06:11] "GET /_astro/PricingSection.D35U0aQn.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:10:17] code 501, message Unsupported method ('POST')
+::1 - - [04/Aug/2025 16:10:17] "POST /api/create-checkout-session HTTP/1.1" 501 -
+::1 - - [04/Aug/2025 16:11:55] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] code 404, message File not found
+::1 - - [04/Aug/2025 16:11:55] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:11:55] code 404, message File not found
+::1 - - [04/Aug/2025 16:11:55] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/about.BgVU_wJK.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/PricingSection.CZYI2J13.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:11:55] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:19:30] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:21:29] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:29] code 404, message File not found
+::1 - - [04/Aug/2025 16:21:29] code 404, message File not found
+::1 - - [04/Aug/2025 16:21:29] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:21:29] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:21:29] "GET /_astro/about.BgVU_wJK.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:29] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:29] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:29] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:29] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:29] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:30] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:30] "GET /_astro/PricingSection.CZYI2J13.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:30] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:30] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:55] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:21:55] code 404, message File not found
+::1 - - [04/Aug/2025 16:21:55] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:21:55] code 404, message File not found
+::1 - - [04/Aug/2025 16:21:55] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:21:59] code 404, message File not found
+::1 - - [04/Aug/2025 16:21:59] code 404, message File not found
+::1 - - [04/Aug/2025 16:21:59] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:21:59] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:21:59] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:22:00] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:22:01] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:26:34] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/about.CdF3eg7w.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] code 404, message File not found
+::1 - - [04/Aug/2025 16:26:34] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:26:34] code 404, message File not found
+::1 - - [04/Aug/2025 16:26:34] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:26:34] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:34] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:47] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:48] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:26:49] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:04] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] code 404, message File not found
+::1 - - [04/Aug/2025 16:30:04] code 404, message File not found
+::1 - - [04/Aug/2025 16:30:04] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:30:04] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:30:04] "GET /_astro/about.CdF3eg7w.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:04] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:06] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:06] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:06] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:07] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:07] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:30:24] "GET / HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] "GET /_astro/about.CdF3eg7w.css HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] code 404, message File not found
+::1 - - [04/Aug/2025 16:30:24] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:30:24] code 404, message File not found
+::1 - - [04/Aug/2025 16:30:24] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:30:24] "GET /success/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:24] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:26] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:26] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:26] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:26] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:27] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:38] "GET /about HTTP/1.1" 301 -
+::1 - - [04/Aug/2025 16:30:38] "GET /about/ HTTP/1.1" 200 -
+::1 - - [04/Aug/2025 16:30:38] code 404, message File not found
+::1 - - [04/Aug/2025 16:30:38] code 404, message File not found
+::1 - - [04/Aug/2025 16:30:38] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:30:38] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:31:18] "GET / HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] code 404, message File not found
+::1 - - [04/Aug/2025 16:31:18] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:31:18] code 404, message File not found
+::1 - - [04/Aug/2025 16:31:18] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [04/Aug/2025 16:31:18] "GET /_astro/about.CdF3eg7w.css HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] "GET /success/ HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 304 -
+::1 - - [04/Aug/2025 16:31:18] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:38:15] "GET /about/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:38:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:15] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:38:15] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:38:15] "GET /_astro/about.CdF3eg7w.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:38:15] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:38:22] "GET /about/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:38:22] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:22] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:22] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:38:22] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:38:51] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:38:51] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:51] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:51] "GET /_astro/about.CdF3eg7w.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:38:51] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:38:51] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:38:51] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:38:54] "GET /about/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:38:54] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:54] code 404, message File not found
+::1 - - [05/Aug/2025 09:38:54] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:38:54] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:40:36] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:40:36] code 404, message File not found
+::1 - - [05/Aug/2025 09:40:36] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:40:36] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:40:36] code 404, message File not found
+::1 - - [05/Aug/2025 09:40:36] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:40:36] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:40:36] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:40:36] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:20] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:20] code 404, message File not found
+::1 - - [05/Aug/2025 09:41:20] code 404, message File not found
+::1 - - [05/Aug/2025 09:41:20] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:41:20] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:41:20] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:41:20] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:41:20] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:20] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:20] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:20] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:20] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:20] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:24] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:30] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:30] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:31] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:41:32] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:42:19] code 404, message File not found
+::1 - - [05/Aug/2025 09:42:19] "GET /services/foundation HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:42:19] code 404, message File not found
+::1 - - [05/Aug/2025 09:42:19] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:42:22] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:43] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:43] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:43] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:43] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:44] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:44] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:46] "GET /about/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:46] code 404, message File not found
+::1 - - [05/Aug/2025 09:42:46] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:42:46] code 404, message File not found
+::1 - - [05/Aug/2025 09:42:46] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:42:46] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:42:46] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:43:24] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:43:24] code 404, message File not found
+::1 - - [05/Aug/2025 09:43:24] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:43:24] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:43:24] code 404, message File not found
+::1 - - [05/Aug/2025 09:43:24] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:43:24] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:43:24] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:43:25] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:04] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:04] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:04] code 404, message File not found
+::1 - - [05/Aug/2025 09:45:04] code 404, message File not found
+::1 - - [05/Aug/2025 09:45:04] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:45:04] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:45:04] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:45:04] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:05] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:27] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:27] code 404, message File not found
+::1 - - [05/Aug/2025 09:45:27] code 404, message File not found
+::1 - - [05/Aug/2025 09:45:27] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:45:27] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:27] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:45:27] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:45:27] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:45:28] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:47:04] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:47:04] code 404, message File not found
+::1 - - [05/Aug/2025 09:47:04] code 404, message File not found
+::1 - - [05/Aug/2025 09:47:04] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:47:04] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:47:04] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:47:04] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:47:04] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:47:05] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:48:24] "GET /about/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:48:24] code 404, message File not found
+::1 - - [05/Aug/2025 09:48:24] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:48:24] code 404, message File not found
+::1 - - [05/Aug/2025 09:48:24] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:48:24] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:48:24] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:48:25] "GET /favicon.svg HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:48:28] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:48:28] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:48:28] code 404, message File not found
+::1 - - [05/Aug/2025 09:48:28] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:48:28] code 404, message File not found
+::1 - - [05/Aug/2025 09:48:28] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:48:28] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:48:28] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:48:55] "GET /about/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:48:55] code 404, message File not found
+::1 - - [05/Aug/2025 09:48:55] code 404, message File not found
+::1 - - [05/Aug/2025 09:48:55] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:48:55] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:48:55] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:48:55] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:48:56] "GET /favicon.svg HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:49:14] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:49:14] code 404, message File not found
+::1 - - [05/Aug/2025 09:49:14] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:49:14] code 404, message File not found
+::1 - - [05/Aug/2025 09:49:14] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:49:14] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:49:14] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:49:43] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:49:43] code 404, message File not found
+::1 - - [05/Aug/2025 09:49:43] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:49:43] "GET /_astro/about.CoEVHxhn.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:49:43] code 404, message File not found
+::1 - - [05/Aug/2025 09:49:43] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:49:43] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:49:43] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:49:43] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:50:49] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:50:49] code 404, message File not found
+::1 - - [05/Aug/2025 09:50:49] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:50:49] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:50:49] code 404, message File not found
+::1 - - [05/Aug/2025 09:50:49] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:50:49] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:50:49] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:50:49] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] code 404, message File not found
+::1 - - [05/Aug/2025 09:51:04] code 404, message File not found
+::1 - - [05/Aug/2025 09:51:04] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:51:04] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:51:04] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:04] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:07] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:10] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:10] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:10] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:11] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:51:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:51:15] "GET /framework-guide HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:51:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:51:15] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:54:12] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:12] code 404, message File not found
+::1 - - [05/Aug/2025 09:54:12] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:54:12] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:12] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:54:12] code 404, message File not found
+::1 - - [05/Aug/2025 09:54:12] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:54:12] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:13] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:15] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:54:15] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:54:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:54:15] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:54:15] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:15] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:15] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:15] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:16] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:16] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:17] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:17] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:17] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:18] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:18] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:54:22] code 404, message File not found
+::1 - - [05/Aug/2025 09:54:22] "GET /services/foundation HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:54:49] "GET /favicon.svg HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /calculator HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:55:15] "GET /calculator/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:15] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:15] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:15] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:15] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:15] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:18] "GET /favicon.svg HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:22] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:22] "GET /contact HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:27] "GET /about HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:55:27] "GET /about/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:55:27] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:27] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:27] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:27] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:32] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:32] "GET /terms HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:36] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:36] "GET /cookies HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:41] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:41] "GET /services/custom HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:49] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:49] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:49] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:49] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:49] code 404, message File not found
+::1 - - [05/Aug/2025 09:55:49] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:55:49] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:55:49] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:49] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:49] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:49] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:49] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:49] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:55:50] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:30] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:30] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:30] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:30] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:30] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:30] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:30] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:56:30] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:31] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:31] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:31] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:31] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:31] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:31] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:31] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:33] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:33] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:33] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:34] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:34] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:38] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:38] "GET /services/enterprise HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:38] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:38] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:44] "GET /about HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:56:44] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:44] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:44] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:44] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:44] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:50] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:50] "GET /contact HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:54] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:54] "GET /framework-guide HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:59] "GET /calculator HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:56:59] "GET /calculator/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:56:59] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:59] code 404, message File not found
+::1 - - [05/Aug/2025 09:56:59] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:56:59] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:57:16] code 404, message File not found
+::1 - - [05/Aug/2025 09:57:16] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 09:57:16] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:57:35] "GET /calculator/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:35] code 404, message File not found
+::1 - - [05/Aug/2025 09:57:35] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:57:35] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:35] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 09:57:35] code 404, message File not found
+::1 - - [05/Aug/2025 09:57:35] code 404, message File not found
+::1 - - [05/Aug/2025 09:57:35] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:57:35] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:57:35] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:36] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:36] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:36] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:36] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:36] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:36] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:36] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:51] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:51] code 404, message File not found
+::1 - - [05/Aug/2025 09:57:51] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:51] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:57:51] code 404, message File not found
+::1 - - [05/Aug/2025 09:57:51] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 09:57:52] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:53] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:53] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 09:57:54] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] code 404, message File not found
+::1 - - [05/Aug/2025 10:17:55] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:17:55] code 404, message File not found
+::1 - - [05/Aug/2025 10:17:55] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:17:55] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:55] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:56] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:17:58] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:17:58] code 404, message File not found
+::1 - - [05/Aug/2025 10:17:58] code 404, message File not found
+::1 - - [05/Aug/2025 10:17:58] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:17:58] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:21:06] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:06] code 404, message File not found
+::1 - - [05/Aug/2025 10:21:06] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:21:06] code 404, message File not found
+::1 - - [05/Aug/2025 10:21:06] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:21:06] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:06] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:06] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:06] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:06] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:06] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:06] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:07] "GET /favicon.svg HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:09] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:21:09] code 404, message File not found
+::1 - - [05/Aug/2025 10:21:09] code 404, message File not found
+::1 - - [05/Aug/2025 10:21:09] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:21:09] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:21:54] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 10:21:54] code 404, message File not found
+::1 - - [05/Aug/2025 10:21:54] code 404, message File not found
+::1 - - [05/Aug/2025 10:21:54] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:21:54] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:21:54] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:54] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:55] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:56] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:56] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:56] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:57] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:21:57] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:04] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:04] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:07] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:07] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 10:22:07] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:07] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:07] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:07] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:07] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:07] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:08] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:24] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:22:24] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:24] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:24] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:24] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:32] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:32] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:39] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:39] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:39] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 10:22:39] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:39] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:39] code 404, message File not found
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:22:39] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:39] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:22:40] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] code 404, message File not found
+::1 - - [05/Aug/2025 10:23:02] code 404, message File not found
+::1 - - [05/Aug/2025 10:23:02] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:23:02] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:23:02] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 10:23:02] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:02] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:03] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:04] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:04] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:04] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:05] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:06] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 10:23:18] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:23:18] code 404, message File not found
+::1 - - [05/Aug/2025 10:23:18] code 404, message File not found
+::1 - - [05/Aug/2025 10:23:18] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:23:18] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:23:35] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:23:35] code 404, message File not found
+::1 - - [05/Aug/2025 10:23:35] code 404, message File not found
+::1 - - [05/Aug/2025 10:23:35] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:23:35] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:59:14] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:14] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:14] code 404, message File not found
+::1 - - [05/Aug/2025 10:59:14] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:59:14] code 404, message File not found
+::1 - - [05/Aug/2025 10:59:14] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 10:59:14] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:14] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:14] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:14] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:14] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:14] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 10:59:15] "GET /favicon.svg HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 11:07:55] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:07:55] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:07:55] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:07:55] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:07:55] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:07:56] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 11:42:09] code 404, message File not found
+::1 - - [05/Aug/2025 11:42:09] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 11:42:09] code 404, message File not found
+::1 - - [05/Aug/2025 11:42:09] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 11:42:09] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:09] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 11:42:09] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 11:42:09] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:42:11] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 11:42:12] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 11:42:12] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 11:42:12] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 11:42:13] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:11] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:11] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 11:50:11] code 404, message File not found
+::1 - - [05/Aug/2025 11:50:11] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:11] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 11:50:11] code 404, message File not found
+::1 - - [05/Aug/2025 11:50:11] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 11:50:11] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:11] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:11] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:11] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:11] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:12] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:12] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:13] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:39] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:39] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:39] code 404, message File not found
+::1 - - [05/Aug/2025 11:50:39] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 11:50:39] code 404, message File not found
+::1 - - [05/Aug/2025 11:50:39] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 11:50:39] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 11:50:39] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:40] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:40] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:40] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:40] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:40] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:40] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:40] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:42] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:43] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:43] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:43] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 11:50:44] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:07:15] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:15] code 404, message File not found
+::1 - - [05/Aug/2025 15:07:15] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:07:15] code 404, message File not found
+::1 - - [05/Aug/2025 15:07:15] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:07:15] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:15] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:15] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:15] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:15] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:15] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:15] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:07:15] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:07:15] "GET /favicon.svg HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:07:18] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:07:18] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:07:18] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:07:19] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:07:19] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:11:18] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] code 404, message File not found
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/about.C5WRMP9J.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:11:18] code 404, message File not found
+::1 - - [05/Aug/2025 15:11:18] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 15:11:18] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:11:18] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/AnimatedHero.DQs-hJRz.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:18] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:19] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:11:20] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:11:20] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:11:21] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:11:21] "GET /_astro/PricingSection.TWFIktV8.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:11:42] code 404, message File not found
+::1 - - [05/Aug/2025 15:11:42] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:11:42] code 404, message File not found
+::1 - - [05/Aug/2025 15:11:42] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:11:50] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:11:50] code 404, message File not found
+::1 - - [05/Aug/2025 15:11:50] code 404, message File not found
+::1 - - [05/Aug/2025 15:11:50] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:11:50] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:20:29] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:29] code 404, message File not found
+::1 - - [05/Aug/2025 15:20:29] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:20:29] code 404, message File not found
+::1 - - [05/Aug/2025 15:20:29] "GET /_astro/about.CCTcAEZo.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:29] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:20:29] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 15:20:29] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:30] "GET /_astro/AnimatedHero.B7hQxfQ0.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:30] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:30] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:30] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:30] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:30] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:30] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET / HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET /_astro/about.CCTcAEZo.css HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] code 404, message File not found
+::1 - - [05/Aug/2025 15:20:32] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:20:32] code 404, message File not found
+::1 - - [05/Aug/2025 15:20:32] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:20:32] "GET /success HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 15:20:32] "GET /success/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET /_astro/AnimatedHero.B7hQxfQ0.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:32] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:33] "GET /favicon.svg HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:34] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:35] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:35] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:35] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:20:36] "GET /_astro/PricingSection.DBeQg4K9.js HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:21:16] "GET /privacy HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 15:21:16] "GET /privacy/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:21:16] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:16] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:16] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:16] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:24] "GET / HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:24] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:24] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:24] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:24] "GET /_astro/about.CCTcAEZo.css HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] "GET /success/ HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] "GET /_astro/AnimatedHero.B7hQxfQ0.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:24] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:25] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:26] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:26] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:26] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:27] "GET /_astro/PricingSection.DBeQg4K9.js HTTP/1.1" 304 -
+::1 - - [05/Aug/2025 15:21:29] "GET /terms HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 15:21:29] "GET /terms/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:21:29] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:29] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:29] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:29] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:32] "GET /cookies HTTP/1.1" 301 -
+::1 - - [05/Aug/2025 15:21:32] "GET /cookies/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:21:32] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:32] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:32] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:32] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:39] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:39] code 404, message File not found
+::1 - - [05/Aug/2025 15:21:39] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:21:39] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:22:06] "GET /about/ HTTP/1.1" 200 -
+::1 - - [05/Aug/2025 15:22:06] code 404, message File not found
+::1 - - [05/Aug/2025 15:22:06] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [05/Aug/2025 15:22:06] code 404, message File not found
+::1 - - [05/Aug/2025 15:22:06] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [06/Aug/2025 15:34:34] "GET / HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] code 404, message File not found
+::1 - - [06/Aug/2025 15:34:34] "GET /src/components/interactive/AnimatedHero.tsx HTTP/1.1" 404 -
+::1 - - [06/Aug/2025 15:34:34] code 404, message File not found
+::1 - - [06/Aug/2025 15:34:34] "GET /src/components/interactive/ValuePropositionSection.tsx HTTP/1.1" 404 -
+::1 - - [06/Aug/2025 15:34:34] "GET /_astro/about.CCTcAEZo.css HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] "GET /_astro/client.D2WMwoKK.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] "GET /_astro/AnimatedHero.B7hQxfQ0.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] "GET /success/ HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] "GET /_astro/index.RH_Wq4ov.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] "GET /_astro/proxy.C2upVvch.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] "GET /_astro/ValuePropositionSection.Cp36V7R1.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:34] "GET /_astro/use-in-view.DhwLlICT.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:34:36] "GET /_astro/FrameworkShowcase.ChqG-Pjj.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:35:27] "GET /_astro/DemoHomepageGenerator.DR81XQ0K.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:35:27] "GET /_astro/index.rmcqYzns.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:35:30] "GET /_astro/ConversionCalculator.CXB7MPCx.js HTTP/1.1" 304 -
+::1 - - [06/Aug/2025 15:35:31] "GET /_astro/PricingSection.DBeQg4K9.js HTTP/1.1" 304 -

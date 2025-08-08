@@ -1,0 +1,392 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+---
+
+<BaseLayout 
+  title="Conversion-Centered Framework Demo - SaaS & Tech CRO"
+  description="Experience our Conversion-Centered Framework live demo designed for SaaS, tech companies, and data-driven businesses seeking maximum optimization."
+>
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <Badge variant="accent" class="mb-4">Live Demo</Badge>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Conversion-Centered <span class="text-accent">Demo</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          See how our Conversion-Centered Framework maximizes every interaction with data-driven optimization and advanced conversion techniques.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#live-demo">
+            View Live Demo
+          </Button>
+          <Button variant="outline" size="lg" href="/demos">
+            ← Back to All Demos
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Framework Overview -->
+  <Section padding="lg">
+    <Container>
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">Maximum Conversion Engineering</h2>
+          <p class="text-lg text-gray-600 mb-6">
+            The Conversion-Centered Framework is designed for SaaS companies, tech startups, and businesses that need every visitor to count. Every element is optimized for maximum conversion rates.
+          </p>
+          <div class="space-y-4 mb-8">
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-1">A/B Tested Elements</h3>
+                <p class="text-gray-600">Every component is battle-tested with split tests and data validation</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-1">Advanced Analytics</h3>
+                <p class="text-gray-600">Real-time conversion tracking and behavioral analysis</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-success rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-gray-900 mb-1">Dynamic Personalization</h3>
+                <p class="text-gray-600">Content adapts based on visitor behavior and characteristics</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gradient-to-br from-primary-100 to-purple-100 rounded-2xl p-8 text-center">
+          <div class="text-4xl font-bold text-primary mb-2">+280%</div>
+          <div class="text-lg font-semibold text-gray-900 mb-2">Conversion Improvement</div>
+          <div class="text-gray-600 mb-6">SaaS & Tech Average</div>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <div class="font-bold text-gray-900">8-12 weeks</div>
+              <div class="text-gray-600">Implementation</div>
+            </div>
+            <div>
+              <div class="font-bold text-gray-900">ROI 650%+</div>
+              <div class="text-gray-600">Typical Return</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Live Demo Section -->
+  <Section id="live-demo" background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Interactive SaaS Demo</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Experience how the Conversion-Centered Framework transforms a SaaS website into a conversion optimization machine.
+        </p>
+      </div>
+
+      <!-- Demo Container -->
+      <div class="max-w-6xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+          <!-- Demo Navigation -->
+          <div class="bg-gray-100 px-6 py-4 border-b flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+              <div class="flex space-x-2">
+                <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+              </div>
+              <div class="bg-white px-4 py-2 rounded-lg text-sm text-gray-600 flex-1">
+                https://demo-saas.aktivcro.com
+              </div>
+            </div>
+            <Badge variant="primary">Live Demo</Badge>
+          </div>
+
+          <!-- Demo Content -->
+          <div class="aspect-video bg-gradient-to-br from-primary-50 to-purple-50 relative overflow-hidden">
+            <!-- Simulated SaaS Website -->
+            <div class="absolute inset-4 bg-white rounded-lg shadow-lg overflow-hidden">
+              <!-- Header -->
+              <div class="bg-primary text-white p-4 flex items-center justify-between">
+                <div class="font-bold text-lg">GrowthLabs</div>
+                <div class="flex space-x-4 text-sm items-center">
+                  <span>Features</span>
+                  <span>Pricing</span>
+                  <span>Resources</span>
+                  <button class="bg-accent text-primary px-4 py-2 rounded-full font-semibold">
+                    Start Free Trial
+                  </button>
+                </div>
+              </div>
+              
+              <!-- Hero Section -->
+              <div class="p-6 text-center">
+                <h1 class="text-2xl font-bold text-gray-900 mb-2">Scale Your SaaS Revenue</h1>
+                <p class="text-gray-600 mb-4">Analytics platform trusted by 10,000+ growing companies</p>
+                
+                <!-- Value Props */}
+                <div class="flex justify-center items-center space-x-6 mb-4 text-xs">
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 bg-green-400 rounded-full mr-1"></div>
+                    <span>14-day free trial</span>
+                  </div>
+                  <div>No credit card required</div>
+                  <div>Setup in 2 minutes</div>
+                </div>
+                
+                <!-- CTA */}
+                <div class="flex justify-center space-x-3 mb-4">
+                  <button class="bg-primary text-white px-6 py-3 rounded-lg text-sm font-semibold">
+                    Start Free Trial
+                  </button>
+                  <button class="border border-primary text-primary px-6 py-3 rounded-lg text-sm font-semibold">
+                    Watch Demo
+                  </button>
+                </div>
+
+                <!-- Social Proof */}
+                <div class="text-xs text-gray-500 mb-4">
+                  Join 10,000+ companies using GrowthLabs
+                </div>
+                
+                <!-- Logos */}
+                <div class="flex justify-center space-x-4 items-center">
+                  <div class="w-8 h-4 bg-gray-200 rounded"></div>
+                  <div class="w-8 h-4 bg-gray-200 rounded"></div>
+                  <div class="w-8 h-4 bg-gray-200 rounded"></div>
+                  <div class="w-8 h-4 bg-gray-200 rounded"></div>
+                </div>
+              </div>
+              
+              <!-- Features Preview */}
+              <div class="px-6 pb-4">
+                <div class="grid grid-cols-3 gap-2 text-xs">
+                  <div class="text-center p-2 bg-blue-50 rounded">
+                    <div class="w-4 h-4 bg-blue-500 rounded mx-auto mb-1"></div>
+                    <div class="font-semibold">Analytics</div>
+                    <div class="text-gray-600">Real-time data</div>
+                  </div>
+                  <div class="text-center p-2 bg-green-50 rounded">
+                    <div class="w-4 h-4 bg-green-500 rounded mx-auto mb-1"></div>
+                    <div class="font-semibold">Automation</div>
+                    <div class="text-gray-600">Smart workflows</div>
+                  </div>
+                  <div class="text-center p-2 bg-purple-50 rounded">
+                    <div class="w-4 h-4 bg-purple-500 rounded mx-auto mb-1"></div>
+                    <div class="font-semibold">Insights</div>
+                    <div class="text-gray-600">AI-powered</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Hotspots -->
+            <div class="absolute top-20 right-8 w-4 h-4 bg-primary rounded-full animate-pulse cursor-pointer" title="A/B tested CTA buttons"></div>
+            <div class="absolute bottom-32 left-8 w-4 h-4 bg-green-500 rounded-full animate-pulse cursor-pointer" title="Social proof elements"></div>
+            <div class="absolute bottom-20 center w-4 h-4 bg-purple-500 rounded-full animate-pulse cursor-pointer" title="Value proposition optimization"></div>
+          </div>
+
+          <!-- Demo Controls -->
+          <div class="bg-gray-50 px-6 py-4 border-t">
+            <div class="flex items-center justify-between">
+              <div class="text-sm text-gray-600">
+                Click the hotspots to see conversion optimization techniques
+              </div>
+              <div class="flex items-center space-x-4">
+                <button class="text-sm text-primary hover:underline">← Before</button>
+                <button class="text-sm text-primary hover:underline">After →</button>
+                <Button variant="primary" size="sm" href="#get-started">
+                  Get This Framework
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Advanced Features -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Conversion-Centered Features</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Advanced optimization techniques and data-driven elements designed for maximum conversion performance.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">A/B Testing Engine</h3>
+          <p class="text-gray-600">
+            Built-in split testing for headlines, CTAs, forms, and page layouts with statistical significance tracking.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Conversion Analytics</h3>
+          <p class="text-gray-600">
+            Real-time conversion tracking, funnel analysis, and user behavior heatmaps for data-driven optimization.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Dynamic Personalization</h3>
+          <p class="text-gray-600">
+            Content and offers adapt based on visitor source, behavior, and characteristics for maximum relevance.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Smart CTAs</h3>
+          <p class="text-gray-600">
+            Context-aware call-to-action buttons that change based on page content, user journey, and conversion probability.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Urgency & Scarcity</h3>
+          <p class="text-gray-600">
+            Ethically implemented urgency elements and scarcity indicators that drive immediate action without being pushy.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Behavioral Triggers</h3>
+          <p class="text-gray-600">
+            Exit-intent popups, scroll-based offers, and time-based triggers that capture visitors at optimal moments.
+          </p>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Results Section -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">SaaS & Tech Results</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          See how the Conversion-Centered Framework transforms tech companies and SaaS businesses.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <Card variant="elevated" class="text-center">
+          <div class="text-5xl font-bold text-primary mb-4">280%</div>
+          <h3 class="text-2xl font-bold mb-4">Trial Conversion Increase</h3>
+          <p class="text-gray-600 mb-6">
+            GrowthLabs SaaS increased trial-to-paid conversion by 280% and reduced customer acquisition cost by 45%.
+          </p>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <div class="font-bold text-gray-900">$1.8M</div>
+              <div class="text-gray-600">ARR Increase</div>
+            </div>
+            <div>
+              <div class="font-bold text-gray-900">ROI 650%</div>
+              <div class="text-gray-600">Return on Investment</div>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="elevated" class="text-center">
+          <div class="text-5xl font-bold text-success mb-4">92%</div>
+          <h3 class="text-2xl font-bold mb-4">A/B Test Win Rate</h3>
+          <p class="text-gray-600 mb-6">
+            92% of A/B tests using Conversion-Centered principles show statistical significance and positive results.
+          </p>
+          <div class="grid grid-cols-2 gap-4 text-sm">
+            <div>
+              <div class="font-bold text-gray-900">35% higher</div>
+              <div class="text-gray-600">Conversion Rates</div>
+            </div>
+            <div>
+              <div class="font-bold text-gray-900">28% lower</div>
+              <div class="text-gray-600">Bounce Rate</div>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- CTA Section -->
+  <Section id="get-started" background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Maximize Your Conversions?
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Implement the Conversion-Centered Framework and start optimizing every interaction for maximum results.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="/calculator">
+            Calculate Conversion ROI
+          </Button>
+          <Button variant="outline" size="lg" href="/about#contact">
+            Schedule Strategy Call
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>

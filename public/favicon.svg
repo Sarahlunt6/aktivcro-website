@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 128 128">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#20466f;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#ffd147;stop-opacity:1" />
+        </linearGradient>
+    </defs>
+    <!-- AktivCRO Logo - Stylized A with optimization arrow -->
+    <path d="M64 20 L90 70 L80 70 L76 60 L52 60 L48 70 L38 70 L64 20 Z M58 50 L70 50 L64 36 L58 50 Z" fill="url(#grad1)" />
+    <!-- Optimization arrow -->
+    <path d="M85 85 L95 75 L90 70 L105 70 L105 85 L100 80 L90 90 L85 85 Z" fill="#20466f" />
+    <!-- Growth indicator bars -->
+    <rect x="20" y="95" width="8" height="15" fill="#10b981" />
+    <rect x="32" y="90" width="8" height="20" fill="#10b981" />
+    <rect x="44" y="85" width="8" height="25" fill="#10b981" />
+    <style>
+        @media (prefers-color-scheme: dark) {
+            rect { fill: #ffd147; }
+            path:last-of-type { fill: #ffd147; }
+        }
+    </style>
+</svg>

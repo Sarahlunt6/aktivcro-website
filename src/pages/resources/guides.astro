@@ -1,0 +1,219 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+---
+
+<BaseLayout 
+  title="CRO Guides & Playbooks - Conversion Rate Optimization Resources"
+  description="Comprehensive guides and playbooks covering every aspect of conversion rate optimization, from fundamentals to advanced strategies."
+>
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          CRO <span class="text-accent">Guides</span> & Playbooks
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          Step-by-step guides covering every aspect of conversion rate optimization, from fundamentals to advanced implementation strategies.
+        </p>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Featured Guide -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Featured Guide</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Our comprehensive CRO playbook - everything you need to build a successful conversion optimization program.
+        </p>
+      </div>
+
+      <Card variant="elevated" class="max-w-4xl mx-auto">
+        <div class="md:flex items-center">
+          <div class="md:w-1/3 p-6">
+            <div class="aspect-square bg-gradient-to-br from-primary-100 to-primary-200 rounded-lg flex items-center justify-center">
+              <div class="text-center">
+                <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                  </svg>
+                </div>
+                <Badge variant="primary">50 Pages</Badge>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-2/3 p-6">
+            <h3 class="text-3xl font-bold mb-4">Complete CRO Playbook 2025</h3>
+            <p class="text-gray-600 mb-6 text-lg">
+              The ultimate guide to conversion rate optimization. Covers everything from setting up analytics and conducting conversion audits to advanced A/B testing strategies and building optimization programs.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <Badge variant="outline">CRO Fundamentals</Badge>
+              <Badge variant="outline">A/B Testing</Badge>
+              <Badge variant="outline">Analytics Setup</Badge>
+              <Badge variant="outline">User Research</Badge>
+              <Badge variant="outline">Mobile Optimization</Badge>
+              <Badge variant="outline">Case Studies</Badge>
+            </div>
+            <Button variant="primary" size="lg" href="/downloads/CRO-Playbook-2025.md">
+              View Complete Playbook
+            </Button>
+          </div>
+        </div>
+      </Card>
+    </Container>
+  </Section>
+
+  <!-- Guide Categories -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Guide Categories</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Organized resources to help you master every aspect of conversion optimization.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Fundamentals -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">CRO Fundamentals</h3>
+            <p class="text-gray-600 mb-4">
+              Essential concepts, metrics, and methodologies for conversion optimization.
+            </p>
+            <Button variant="outline" size="sm" href="/downloads/CRO-Playbook-2025.md">
+              Learn Fundamentals
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Testing & Experimentation -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">A/B Testing Guide</h3>
+            <p class="text-gray-600 mb-4">
+              Complete guide to planning, running, and analyzing A/B tests for optimization.
+            </p>
+            <Button variant="outline" size="sm" href="/downloads/AB-Testing-Toolkit-2025.md">
+              Master A/B Testing
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Analytics & Measurement -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Analytics Setup</h3>
+            <p class="text-gray-600 mb-4">
+              Proper tracking setup, goal configuration, and measurement frameworks.
+            </p>
+            <Button variant="outline" size="sm" href="/downloads/CRO-Playbook-2025.md">
+              Setup Analytics
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Mobile Optimization -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a1 1 0 001-1V4a1 1 0 00-1-1H8a1 1 0 00-1 1v16a1 1 0 001 1z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Mobile CRO</h3>
+            <p class="text-gray-600 mb-4">
+              Mobile-specific optimization strategies and best practices.
+            </p>
+            <Button variant="outline" size="sm" href="/downloads/CRO-Playbook-2025.md">
+              Optimize Mobile
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Psychology & Persuasion -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Psychology Principles</h3>
+            <p class="text-gray-600 mb-4">
+              Behavioral psychology principles for more persuasive websites.
+            </p>
+            <Button variant="outline" size="sm" href="/downloads/CRO-Playbook-2025.md">
+              Apply Psychology
+            </Button>
+          </div>
+        </Card>
+
+        <!-- Industry-Specific -->
+        <Card variant="hover">
+          <div class="p-6">
+            <div class="w-12 h-12 bg-teal-100 rounded-lg flex items-center justify-center mb-4">
+              <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Industry Guides</h3>
+            <p class="text-gray-600 mb-4">
+              Industry-specific optimization strategies and benchmarks.
+            </p>
+            <Button variant="outline" size="sm" href="/downloads/Industry-Benchmark-Report-2025.md">
+              View by Industry
+            </Button>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- CTA Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Ready to Start Optimizing?
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Get started with our comprehensive CRO playbook and start improving your conversion rates today.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="/downloads/CRO-Playbook-2025.md">
+            Download CRO Playbook
+          </Button>
+          <Button variant="outline" size="lg" href="/calculator">
+            Calculate Your ROI
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>

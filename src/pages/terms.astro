@@ -1,0 +1,104 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+---
+
+<BaseLayout 
+  title="Terms of Service - AktivCRO"
+  description="AktivCRO's terms of service governing the use of our website and conversion optimization services."
+>
+  <Section padding="lg">
+    <Container>
+      <div class="max-w-4xl mx-auto prose prose-lg">
+        <h1 class="text-4xl font-bold mb-8">Terms of Service</h1>
+        <p class="text-gray-600 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using AktivCRO's website and services, you accept and agree to be bound by the terms and provision of this agreement.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>AktivCRO provides conversion rate optimization services, including:</p>
+        <ul>
+          <li>Website conversion audits and analysis</li>
+          <li>Implementation of conversion optimization frameworks</li>
+          <li>A/B testing and performance monitoring</li>
+          <li>Consultation and strategic guidance</li>
+        </ul>
+
+        <h2>3. Service Packages</h2>
+        <h3>Foundation Package ($5,000)</h3>
+        <ul>
+          <li>Intelligent framework selection and implementation</li>
+          <li>Mobile optimization</li>
+          <li>30-day support period</li>
+        </ul>
+
+        <h3>Growth Package ($5,000)</h3>
+        <ul>
+          <li>All Foundation features</li>
+          <li>2-3 custom micro-experiences</li>
+          <li>Advanced conversion tracking</li>
+          <li>60-day support period</li>
+        </ul>
+
+        <h3>Enterprise Platform ($15,000)</h3>
+        <ul>
+          <li>Complete platform transformation</li>
+          <li>5+ custom micro-experiences</li>
+          <li>Ongoing optimization</li>
+          <li>Dedicated success manager</li>
+        </ul>
+
+        <h2>4. Payment Terms</h2>
+        <p>Payment is due upon agreement execution. All prices are in USD and subject to applicable taxes.</p>
+
+        <h2>5. Performance Guarantee</h2>
+        <p>We offer a 30-day performance guarantee. If you're not satisfied with the results, we'll work with you to address concerns or provide a refund.</p>
+
+        <h2>6. Intellectual Property</h2>
+        <p>All content, trademarks, and intellectual property on this website remain the property of AktivCRO. Custom work delivered to clients becomes their property upon full payment.</p>
+
+        <h2>7. Limitation of Liability</h2>
+        <p>AktivCRO shall not be liable for any indirect, incidental, special, or consequential damages arising from the use of our services.</p>
+
+        <h2>8. Termination</h2>
+        <p>Either party may terminate services with 30 days written notice. Completed work and payment for services rendered will be honored.</p>
+
+        <h2>9. Contact Information</h2>
+        <p>For questions about these Terms of Service, contact us at:</p>
+        <p>
+          Email: <a href="mailto:hello@aktivcro.com" class="text-primary hover:underline">hello@aktivcro.com</a><br>
+          Website: <a href="https://aktivcro.com" class="text-primary hover:underline">aktivcro.com</a>
+        </p>
+
+        <h2>10. Changes to Terms</h2>
+        <p>We reserve the right to modify these terms at any time. Changes will be effective immediately upon posting to this page.</p>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>
+
+<style>
+  .prose h2 {
+    @apply text-2xl font-bold mt-8 mb-4 text-gray-900;
+  }
+  
+  .prose h3 {
+    @apply text-xl font-semibold mt-6 mb-3 text-gray-800;
+  }
+  
+  .prose ul {
+    @apply list-disc pl-6 mb-4;
+  }
+  
+  .prose li {
+    @apply mb-2;
+  }
+  
+  .prose p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+</style>

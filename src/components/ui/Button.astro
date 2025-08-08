@@ -1,0 +1,52 @@
+---
+export interface Props {
+  variant?: 'primary' | 'secondary' | 'accent' | 'ghost' | 'outline' | 'success' | 'purple';
+  size?: 'sm' | 'md' | 'lg';
+  type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
+  href?: string;
+  class?: string;
+}
+
+const { 
+  variant = 'primary', 
+  size = 'md', 
+  type = 'button',
+  disabled = false,
+  href,
+  class: className = '',
+  ...rest 
+} = Astro.props;
+
+const baseClasses = 'inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed';
+
+const variants = {
+  primary: 'bg-primary text-white hover:bg-primary-700 focus:ring-primary-500 shadow-lg hover:shadow-xl',
+  secondary: 'bg-white text-primary border-2 border-primary hover:bg-primary hover:text-white focus:ring-primary-500',
+  accent: 'bg-accent text-gray-900 hover:bg-accent-600 focus:ring-accent-500 shadow-lg hover:shadow-xl',
+  ghost: 'text-gray-600 hover:text-primary hover:bg-gray-100 focus:ring-gray-300',
+  outline: 'bg-white text-gray-700 border-2 border-gray-300 hover:border-primary hover:text-primary hover:bg-gray-50 focus:ring-primary-500 shadow-sm hover:shadow-md',
+  success: 'bg-success text-white hover:bg-success-600 focus:ring-success-500 shadow-lg hover:shadow-xl',
+  purple: 'bg-purple-600 text-white hover:bg-purple-700 focus:ring-purple-500 shadow-lg hover:shadow-xl'
+};
+
+const sizes = {
+  sm: 'px-4 py-2 text-sm',
+  md: 'px-6 py-3 text-base',
+  lg: 'px-8 py-4 text-lg'
+};
+
+const classes = `${baseClasses} ${variants[variant]} ${sizes[size]} ${className}`;
+
+const Element = href ? 'a' : 'button';
+---
+
+<Element 
+  class={classes}
+  type={href ? undefined : type}
+  href={href}
+  disabled={disabled}
+  {...rest}
+>
+  <slot />
+</Element>

@@ -1,0 +1,431 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Section from '../../components/ui/Section.astro';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
+---
+
+<BaseLayout 
+  title="Complete CRO Playbook - Free Download"
+  description="50-page comprehensive guide covering conversion rate optimization methodology, A/B testing best practices, and proven strategies."
+>
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <Badge variant="accent" class="mb-6">Free Download</Badge>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Complete <span class="text-accent">CRO Playbook</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-3xl mx-auto">
+          A comprehensive 50-page guide covering everything from conversion audit methodology to A/B testing best practices and implementation strategies.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="#download">
+            Download Free PDF
+          </Button>
+          <Button variant="outline" size="lg" href="#preview">
+            Preview Contents
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Key Benefits -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">What You'll Learn</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          This comprehensive playbook covers everything you need to know to optimize your website for maximum conversions.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Conversion Audit Framework</h3>
+          <p class="text-gray-600">
+            Step-by-step methodology to identify conversion bottlenecks and optimization opportunities on any website.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">A/B Testing Mastery</h3>
+          <p class="text-gray-600">
+            Complete guide to designing, running, and analyzing A/B tests that deliver statistically significant results.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Psychology & UX Principles</h3>
+          <p class="text-gray-600">
+            Consumer psychology principles and UX best practices that drive conversions across all industries.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Implementation Strategies</h3>
+          <p class="text-gray-600">
+            Practical implementation guides with real-world examples and templates you can use immediately.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">ROI Measurement</h3>
+          <p class="text-gray-600">
+            Learn how to measure, track, and report on conversion optimization ROI to demonstrate business impact.
+          </p>
+        </Card>
+
+        <Card variant="hover" class="text-center">
+          <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold mb-4">Tool Recommendations</h3>
+          <p class="text-gray-600">
+            Comprehensive review of CRO tools, analytics platforms, and testing software with implementation guides.
+          </p>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Table of Contents Preview -->
+  <Section id="preview" background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Table of Contents</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          50 pages of actionable strategies, frameworks, and tools organized into easy-to-follow chapters.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+        <Card variant="elevated">
+          <h3 class="text-2xl font-bold mb-6 text-primary">Part I: Foundation</h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-primary font-bold text-sm">1</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">CRO Fundamentals</h4>
+                <p class="text-sm text-gray-600">Understanding conversion psychology and user behavior</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-primary font-bold text-sm">2</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Analytics Setup</h4>
+                <p class="text-sm text-gray-600">Essential tracking and measurement configuration</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-primary font-bold text-sm">3</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Conversion Audit Framework</h4>
+                <p class="text-sm text-gray-600">Step-by-step website optimization assessment</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-primary font-bold text-sm">4</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">User Research Methods</h4>
+                <p class="text-sm text-gray-600">Qualitative and quantitative research techniques</p>
+              </div>
+            </div>
+          </div>
+        </Card>
+
+        <Card variant="elevated">
+          <h3 class="text-2xl font-bold mb-6 text-accent-700">Part II: Implementation</h3>
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-accent-700 font-bold text-sm">5</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">A/B Testing Mastery</h4>
+                <p class="text-sm text-gray-600">Statistical significance, test design, and analysis</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-accent-700 font-bold text-sm">6</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Landing Page Optimization</h4>
+                <p class="text-sm text-gray-600">High-converting page elements and structure</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-accent-700 font-bold text-sm">7</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Form & Checkout Optimization</h4>
+                <p class="text-sm text-gray-600">Reducing friction in conversion funnels</p>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <div class="w-8 h-8 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-accent-700 font-bold text-sm">8</span>
+              </div>
+              <div>
+                <h4 class="font-semibold">Mobile Conversion Strategies</h4>
+                <p class="text-sm text-gray-600">Mobile-specific optimization techniques</p>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+
+      <div class="mt-8">
+        <Card variant="elevated">
+          <h3 class="text-2xl font-bold mb-6 text-success">Part III: Advanced Strategies</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-success font-bold text-sm">9</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Personalization & Segmentation</h4>
+                  <p class="text-sm text-gray-600">Dynamic content and targeted experiences</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-success font-bold text-sm">10</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Psychology & Persuasion</h4>
+                  <p class="text-sm text-gray-600">Cognitive biases and behavioral triggers</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-success font-bold text-sm">11</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Advanced Testing Methods</h4>
+                  <p class="text-sm text-gray-600">Multivariate, multi-page, and sequential testing</p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-success font-bold text-sm">12</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">ROI Measurement & Reporting</h4>
+                  <p class="text-sm text-gray-600">Proving and communicating CRO value</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-success font-bold text-sm">13</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Building a CRO Program</h4>
+                  <p class="text-sm text-gray-600">Team structure, processes, and scaling</p>
+                </div>
+              </div>
+              <div class="flex items-center">
+                <div class="w-8 h-8 bg-success-100 rounded-full flex items-center justify-center mr-4">
+                  <span class="text-success font-bold text-sm">14</span>
+                </div>
+                <div>
+                  <h4 class="font-semibold">Industry Case Studies</h4>
+                  <p class="text-sm text-gray-600">Real-world examples and lessons learned</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Testimonials -->
+  <Section padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">What CRO Professionals Say</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Trusted by thousands of marketers, growth teams, and conversion specialists worldwide.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <Card variant="hover">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mr-4">
+              <span class="text-primary font-bold">JD</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Jason Delacroix</h4>
+              <p class="text-sm text-gray-600">Growth Lead, TechStartup Inc.</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "This playbook saved us countless hours of trial and error. We implemented their audit framework and saw a 45% improvement in conversions within 8 weeks."
+          </p>
+          <div class="flex text-accent-600">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </Card>
+
+        <Card variant="hover">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-success-100 rounded-full flex items-center justify-center mr-4">
+              <span class="text-success font-bold">MS</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Maria Santos</h4>
+              <p class="text-sm text-gray-600">Marketing Director, E-commerce Co.</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "The A/B testing section alone is worth its weight in gold. Finally, a resource that explains statistical significance in plain English!"
+          </p>
+          <div class="flex text-accent-600">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </Card>
+
+        <Card variant="hover">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-accent-100 rounded-full flex items-center justify-center mr-4">
+              <span class="text-accent-700 font-bold">RK</span>
+            </div>
+            <div>
+              <h4 class="font-semibold">Robert Kim</h4>
+              <p class="text-sm text-gray-600">CRO Consultant, Freelance</p>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            "I've been doing CRO for 5 years and still learned new techniques from this guide. The psychology section is particularly insightful."
+          </p>
+          <div class="flex text-accent-600">
+            ⭐⭐⭐⭐⭐
+          </div>
+        </Card>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Download Section -->
+  <Section id="download" background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Download Your Free CRO Playbook
+        </h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Join 10,000+ marketers who have downloaded this comprehensive guide. Start optimizing your website today.
+        </p>
+        
+        <Card variant="elevated" class="max-w-2xl mx-auto text-gray-900">
+          <form class="space-y-6" action="/api/download-playbook" method="POST">
+            <div class="grid md:grid-cols-2 gap-4">
+              <input 
+                type="text" 
+                name="firstName"
+                placeholder="First Name"
+                class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                required
+              >
+              <input 
+                type="text" 
+                name="lastName"
+                placeholder="Last Name"
+                class="px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                required
+              >
+            </div>
+            <input 
+              type="email" 
+              name="email"
+              placeholder="Work Email Address"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+              required
+            >
+            <input 
+              type="text" 
+              name="company"
+              placeholder="Company Name"
+              class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+            >
+            <Button variant="accent" size="lg" type="submit" class="w-full">
+              Download Free Playbook (PDF)
+            </Button>
+          </form>
+          <p class="text-sm text-gray-500 mt-4">
+            Your information is secure. We'll also send you weekly CRO tips and case studies. Unsubscribe anytime.
+          </p>
+        </Card>
+
+        <div class="mt-8 flex flex-wrap justify-center gap-8 text-sm opacity-90">
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            50-page comprehensive guide
+          </div>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Instant PDF download
+          </div>
+          <div class="flex items-center">
+            <svg class="w-4 h-4 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+            </svg>
+            Templates & checklists included
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>
