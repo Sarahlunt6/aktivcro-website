@@ -1,0 +1,88 @@
+---
+export interface BreadcrumbItem {
+  name: string;
+  href?: string;
+  position?: number;
+}
+
+export interface Props {
+  items: BreadcrumbItem[];
+  baseUrl?: string;
+}
+
+const { items, baseUrl = 'https://aktivcro.com' } = Astro.props;
+
+// Automatically assign positions if not provided
+const breadcrumbItems = items.map((item, index) => ({
+  ...item,
+  position: item.position || index + 1
+}));
+
+// Generate breadcrumb JSON-LD schema
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": breadcrumbItems.map(item => ({
+    "@type": "ListItem",
+    "position": item.position,
+    "name": item.name,
+    // Only include URL if href is provided (last item might not have href)
+    ...(item.href && {
+      "item": {
+        "@type": "WebPage",
+        "@id": item.href.startsWith('http') ? item.href : `${baseUrl}${item.href}`
+      }
+    })
+  }))
+};
+
+// Generate microdata as fallback
+const generateMicrodata = () => {
+  return breadcrumbItems.map((item, index) => ({
+    ...item,
+    isLast: index === breadcrumbItems.length - 1
+  }));
+};
+
+const microdataItems = generateMicrodata();
+---
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema, null, 0)} />
+
+<!-- Microdata fallback for better compatibility -->
+<div style="display: none;">
+  <nav itemscope itemtype="https://schema.org/BreadcrumbList" aria-label="Breadcrumb">
+    {microdataItems.map((item, index) => (
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        {item.href && !item.isLast ? (
+          <a itemprop="item" href={item.href.startsWith('http') ? item.href : `${baseUrl}${item.href}`}>
+            <span itemprop="name">{item.name}</span>
+          </a>
+        ) : (
+          <span itemprop="name">{item.name}</span>
+        )}
+        <meta itemprop="position" content={item.position?.toString() || (index + 1).toString()} />
+      </span>
+    ))}
+  </nav>
+</div>
+
+<!-- Rich Snippets Enhancement -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://aktivcro.com/"
+      }
+    ]
+  }
+}
+</script>

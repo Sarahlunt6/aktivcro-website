@@ -1,0 +1,180 @@
+---
+export const prerender = true;
+
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Section from '../../components/ui/Section.astro';
+import Card from '../../components/ui/Card.astro';
+import Button from '../../components/ui/Button.astro';
+import Breadcrumb from '../../components/ui/Breadcrumb.astro';
+import OptimizedImage from '../../components/ui/OptimizedImage.astro';
+
+const blogPosts = await getCollection('blog');
+const sortedPosts = blogPosts.sort((a, b) => 
+  b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+const featuredPosts = sortedPosts.filter(post => post.data.featured);
+const regularPosts = sortedPosts.filter(post => !post.data.featured);
+---
+
+<BaseLayout 
+  title="CRO Blog - Conversion Rate Optimization Tips & Strategies | AktivCRO"
+  description="Expert insights on conversion rate optimization, A/B testing, lead generation, and website optimization. Learn proven strategies to increase your conversion rates and grow your business."
+>
+  <!-- Breadcrumb Navigation -->
+  <Section padding="sm" background="gray">
+    <Container>
+      <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Blog" }
+      ]} />
+    </Container>
+  </Section>
+
+  <!-- Blog Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          CRO <span class="text-accent">Insights</span> & Strategies
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90 max-w-4xl mx-auto">
+          Expert tips, case studies, and proven strategies to optimize your website conversions and maximize lead generation.
+        </p>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Featured Posts -->
+  {featuredPosts.length > 0 && (
+    <Section padding="lg">
+      <Container>
+        <div class="mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Featured Articles</h2>
+          <div class="grid lg:grid-cols-2 gap-8">
+            {featuredPosts.slice(0, 2).map((post, index) => (
+              <Card variant="elevated" class={`h-full hover-lift animate-slide-in-${index === 0 ? 'left' : 'right'}`}>
+                <article class="h-full flex flex-col">
+                  {post.data.image && (
+                    <OptimizedImage 
+                      src={post.data.image} 
+                      alt={post.data.imageAlt || `${post.data.title} - Featured CRO Article`}
+                      width={600}
+                      height={300}
+                      loading="lazy"
+                      class="w-full h-48 object-cover rounded-t-lg"
+                    />
+                  )}
+                  <div class="p-6 flex-1 flex flex-col">
+                    <div class="mb-4">
+                      <span class="inline-block bg-primary-100 text-primary-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-2">
+                        {post.data.category}
+                      </span>
+                      <p class="text-sm text-gray-500">
+                        {post.data.publishDate.toLocaleDateString()} • {post.data.readTime} min read
+                      </p>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 flex-1">
+                      <a href={`/blog/${post.slug}/`} class="hover:text-primary transition-colors">
+                        {post.data.title}
+                      </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4">{post.data.description}</p>
+                    <div class="mt-auto">
+                      <Button variant="outline" size="sm" href={`/blog/${post.slug}/`}>
+                        Read More
+                      </Button>
+                    </div>
+                  </div>
+                </article>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </Section>
+  )}
+
+  <!-- All Blog Posts -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">All Articles</h2>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {regularPosts.map((post, index) => (
+            <Card variant="hover" class="h-full hover-lift" style={`animation-delay: ${index * 0.1}s`}>
+              <article class="h-full flex flex-col">
+                {post.data.image && (
+                  <OptimizedImage 
+                    src={post.data.image} 
+                    alt={post.data.imageAlt || `${post.data.title} - CRO Blog Post`}
+                    width={400}
+                    height={200}
+                    loading="lazy"
+                    class="w-full h-48 object-cover rounded-t-lg"
+                  />
+                )}
+                <div class="p-6 flex-1 flex flex-col">
+                  <div class="mb-4">
+                    <span class="inline-block bg-accent-100 text-accent-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-2">
+                      {post.data.category}
+                    </span>
+                    <p class="text-sm text-gray-500">
+                      {post.data.publishDate.toLocaleDateString()} • {post.data.readTime} min read
+                    </p>
+                  </div>
+                  <h3 class="text-lg font-bold mb-3 flex-1">
+                    <a href={`/blog/${post.slug}/`} class="hover:text-primary transition-colors">
+                      {post.data.title}
+                    </a>
+                  </h3>
+                  <p class="text-gray-600 mb-4 text-sm">{post.data.description}</p>
+                  <div class="flex flex-wrap gap-2 mb-4">
+                    {post.data.tags.slice(0, 3).map((tag) => (
+                      <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div class="mt-auto">
+                    <Button variant="outline" size="sm" href={`/blog/${post.slug}/`}>
+                      Read Article
+                    </Button>
+                  </div>
+                </div>
+              </article>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Newsletter CTA -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Stay Updated</h2>
+        <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+          Get the latest conversion optimization tips, case studies, and strategies delivered to your inbox.
+        </p>
+        <div class="max-w-md mx-auto">
+          <form action="/api/newsletter-signup" method="POST" class="flex gap-4">
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Enter your email" 
+              required
+              class="flex-1 px-4 py-3 rounded-lg border-0 text-gray-900"
+            />
+            <Button type="submit" variant="accent">
+              Subscribe
+            </Button>
+          </form>
+        </div>
+      </div>
+    </Container>
+  </Section>
+</BaseLayout>

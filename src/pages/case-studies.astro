@@ -1,0 +1,304 @@
+---
+export const prerender = true;
+
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/ui/Container.astro';
+import Section from '../components/ui/Section.astro';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import Badge from '../components/ui/Badge.astro';
+import Breadcrumb from '../components/ui/Breadcrumb.astro';
+
+// Sample case studies data (in production, this would come from a CMS or database)
+const caseStudies = [
+  {
+    id: 'healthcare-startup',
+    title: 'Healthcare Startup Increases Leads by 340%',
+    client: 'TechMed Solutions',
+    industry: 'Healthcare Technology',
+    challenge: 'Low conversion rate on their B2B SaaS landing pages with only 1.2% conversion rate from paid traffic.',
+    solution: 'Implemented Authority Framework with trust signals, streamlined forms, and optimized value proposition messaging.',
+    results: {
+      conversionRate: { before: 1.2, after: 5.3, improvement: '+340%' },
+      leads: { before: 45, after: 198, improvement: '+340%' },
+      revenue: { before: 15000, after: 64000, improvement: '+327%' },
+      timeframe: '90 days'
+    },
+    testimonial: "AktivCRO transformed our lead generation completely. The systematic approach and data-driven optimization delivered results beyond our expectations.",
+    testimonialAuthor: "Sarah Chen, VP Marketing",
+    tags: ['B2B SaaS', 'Healthcare', 'Lead Generation', 'Authority Framework'],
+    featured: true
+  },
+  {
+    id: 'ecommerce-retailer',
+    title: 'E-commerce Brand Doubles Online Revenue',
+    client: 'ActiveLife Gear',
+    industry: 'Sports & Fitness E-commerce',
+    challenge: 'High cart abandonment rate (78%) and low product page conversion rates affecting overall revenue growth.',
+    solution: 'Deployed Conversion-Centered Design with optimized checkout flow, social proof integration, and mobile-first approach.',
+    results: {
+      conversionRate: { before: 2.1, after: 4.8, improvement: '+129%' },
+      revenue: { before: 180000, after: 385000, improvement: '+114%' },
+      cartAbandonmentRate: { before: 78, after: 45, improvement: '-42%' },
+      timeframe: '120 days'
+    },
+    testimonial: "The ROI was incredible. Within 4 months, we had completely transformed our online sales performance.",
+    testimonialAuthor: "Mike Rodriguez, Founder & CEO",
+    tags: ['E-commerce', 'Mobile Optimization', 'Checkout Optimization', 'CCD Framework'],
+    featured: true
+  },
+  {
+    id: 'financial-services',
+    title: 'Financial Services Firm Triples Qualified Leads',
+    client: 'WealthPath Advisors',
+    industry: 'Financial Services',
+    challenge: 'Difficulty generating qualified leads for high-value financial advisory services with complex decision-making process.',
+    solution: 'Implemented CRE (Conversion Rate Enhancement) Framework with progressive profiling, trust-building content, and consultative approach.',
+    results: {
+      qualifiedLeads: { before: 12, after: 38, improvement: '+217%' },
+      leadQuality: { before: 2.8, after: 4.2, improvement: '+50%' },
+      clientAcquisitionCost: { before: 2400, after: 1650, improvement: '-31%' },
+      timeframe: '180 days'
+    },
+    testimonial: "AktivCRO understood our unique industry challenges and created a conversion strategy that actually works for complex B2B sales.",
+    testimonialAuthor: "Jennifer Walsh, Managing Partner",
+    tags: ['Financial Services', 'B2B', 'Lead Quality', 'CRE Framework'],
+    featured: false
+  },
+  {
+    id: 'tech-startup',
+    title: 'SaaS Startup Achieves 5x Demo Conversion Rate',
+    client: 'DataFlow Analytics',
+    industry: 'Business Intelligence Software',
+    challenge: 'Low demo request conversion rate and poor demo-to-trial conversion affecting growth metrics.',
+    solution: 'Mobile-PWA Framework implementation with interactive demos, streamlined signup flow, and performance optimization.',
+    results: {
+      demoRequests: { before: 0.8, after: 4.2, improvement: '+425%' },
+      demoToTrial: { before: 15, after: 34, improvement: '+127%' },
+      trialToCustomer: { before: 8, after: 18, improvement: '+125%' },
+      timeframe: '75 days'
+    },
+    testimonial: "The Mobile-PWA approach was game-changing. Our users now have an app-like experience that converts incredibly well.",
+    testimonialAuthor: "Alex Park, Head of Growth",
+    tags: ['SaaS', 'Mobile-PWA', 'Demo Optimization', 'B2B Software'],
+    featured: false
+  }
+];
+
+const featuredCaseStudies = caseStudies.filter(study => study.featured);
+const allCaseStudies = caseStudies;
+---
+
+<BaseLayout 
+  title="Case Studies - Real CRO Results & Client Success Stories | AktivCRO"
+  description="Discover how AktivCRO helped 100+ businesses increase conversions by 200-400%. Real case studies showing proven results from our conversion rate optimization strategies."
+>
+  <!-- Breadcrumb Navigation -->
+  <Section padding="sm" background="gray">
+    <Container>
+      <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Case Studies" }
+      ]} />
+    </Container>
+  </Section>
+
+  <!-- Hero Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+          Real Results from <span class="text-accent">Real Businesses</span>
+        </h1>
+        <p class="text-xl md:text-2xl mb-8 opacity-90">
+          See how our proven 4-framework system transformed websites and delivered 200-400% conversion improvements for businesses like yours.
+        </p>
+        <div class="flex flex-wrap justify-center gap-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-accent">100+</div>
+            <div class="text-sm opacity-80">Successful Projects</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-accent">340%</div>
+            <div class="text-sm opacity-80">Average Improvement</div>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-accent">$12M+</div>
+            <div class="text-sm opacity-80">Additional Revenue Generated</div>
+          </div>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Featured Case Studies -->
+  <Section background="white" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Featured Success Stories</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Deep dive into our most impactful conversion optimization projects and the strategies that delivered exceptional results.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        {featuredCaseStudies.map((study) => (
+          <Card variant="elevated" class="h-full hover-lift">
+            <div class="p-8">
+              <!-- Header -->
+              <div class="mb-6">
+                <div class="flex flex-wrap gap-2 mb-4">
+                  {study.tags.slice(0, 2).map((tag) => (
+                    <Badge variant="primary">{tag}</Badge>
+                  ))}
+                </div>
+                <h3 class="text-2xl font-bold mb-2">{study.title}</h3>
+                <p class="text-gray-600 font-medium">{study.client} • {study.industry}</p>
+              </div>
+
+              <!-- Challenge & Solution -->
+              <div class="mb-8">
+                <div class="mb-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Challenge:</h4>
+                  <p class="text-gray-700">{study.challenge}</p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Solution:</h4>
+                  <p class="text-gray-700">{study.solution}</p>
+                </div>
+              </div>
+
+              <!-- Results -->
+              <div class="mb-8">
+                <h4 class="font-semibold text-gray-900 mb-4">Results in {study.results.timeframe}:</h4>
+                <div class="grid grid-cols-2 gap-4">
+                  {Object.entries(study.results).filter(([key]) => key !== 'timeframe').map(([key, data]) => (
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                      <div class="text-2xl font-bold text-primary mb-1">{data.improvement}</div>
+                      <div class="text-sm text-gray-600 capitalize">
+                        {key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <!-- Testimonial -->
+              <div class="border-l-4 border-primary pl-6 mb-6">
+                <p class="text-gray-700 italic mb-3">"{study.testimonial}"</p>
+                <p class="text-sm font-medium text-gray-900">— {study.testimonialAuthor}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </Container>
+  </Section>
+
+  <!-- All Case Studies -->
+  <Section background="gray" padding="lg">
+    <Container>
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">More Success Stories</h2>
+        <p class="text-xl text-gray-600">
+          Explore additional case studies across different industries and business models.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
+        {allCaseStudies.filter(study => !study.featured).map((study) => (
+          <Card variant="hover" class="h-full hover-lift">
+            <div class="p-6">
+              <div class="mb-4">
+                <div class="flex flex-wrap gap-2 mb-3">
+                  {study.tags.slice(0, 3).map((tag) => (
+                    <Badge variant="outline">{tag}</Badge>
+                  ))}
+                </div>
+                <h3 class="text-xl font-bold mb-2">{study.title}</h3>
+                <p class="text-gray-600">{study.client} • {study.industry}</p>
+              </div>
+
+              <p class="text-gray-700 mb-6 line-clamp-3">{study.challenge}</p>
+
+              <!-- Key Results -->
+              <div class="mb-6">
+                <div class="flex flex-wrap gap-4">
+                  {Object.entries(study.results).filter(([key]) => key !== 'timeframe').slice(0, 2).map(([key, data]) => (
+                    <div class="text-center">
+                      <div class="text-xl font-bold text-primary">{data.improvement}</div>
+                      <div class="text-xs text-gray-600 capitalize">
+                        {key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase())}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <!-- Testimonial -->
+              <div class="border-l-4 border-accent pl-4">
+                <p class="text-sm text-gray-700 italic mb-2">"{study.testimonial}"</p>
+                <p class="text-xs font-medium text-gray-900">— {study.testimonialAuthor}</p>
+              </div>
+            </div>
+          </Card>
+        ))}
+      </div>
+    </Container>
+  </Section>
+
+  <!-- CTA Section -->
+  <Section background="primary" padding="lg">
+    <Container>
+      <div class="text-center text-white max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready for Your Success Story?</h2>
+        <p class="text-xl mb-8 opacity-90">
+          Join 100+ businesses who've transformed their websites with our proven conversion optimization strategies. Get your free consultation and discover your optimization potential.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <Button variant="accent" size="lg" href="/contact">
+            Get Your Free CRO Analysis
+          </Button>
+          <Button variant="outline" size="lg" href="/calculator" class="text-white border-white hover:bg-white hover:text-primary">
+            Calculate Your Potential ROI
+          </Button>
+        </div>
+      </div>
+    </Container>
+  </Section>
+
+  <!-- Case Studies Schema Markup -->
+  <script type="application/ld+json" define:vars={{ 
+    caseStudies: featuredCaseStudies,
+    siteUrl: import.meta.env.SITE_URL || 'https://aktivcro.com'
+  }}>
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Conversion Rate Optimization Case Studies",
+      "description": "Real case studies showing proven CRO results and client success stories",
+      "url": siteUrl + "/case-studies",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": caseStudies.map((study, index) => ({
+          "@type": "Article",
+          "position": index + 1,
+          "name": study.title,
+          "description": study.challenge,
+          "author": {
+            "@type": "Organization",
+            "name": "AktivCRO"
+          },
+          "about": {
+            "@type": "Service",
+            "name": "Conversion Rate Optimization",
+            "provider": {
+              "@type": "Organization", 
+              "name": "AktivCRO"
+            }
+          }
+        }))
+      }
+    }
+  </script>
+</BaseLayout>

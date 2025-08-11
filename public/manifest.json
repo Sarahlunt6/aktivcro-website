@@ -1,0 +1,69 @@
+{
+  "name": "AktivCRO - Conversion Rate Optimization",
+  "short_name": "AktivCRO",
+  "description": "Transform your website into an intelligent problem-solving platform with proven CRO frameworks",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#20466f",
+  "orientation": "portrait-primary",
+  "categories": ["business", "marketing", "productivity"],
+  "lang": "en-US",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/og-image.svg",
+      "sizes": "1200x630",
+      "type": "image/svg+xml",
+      "form_factor": "wide"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "ROI Calculator",
+      "short_name": "Calculator",
+      "description": "Calculate your conversion optimization ROI",
+      "url": "/calculator",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Framework Demos",
+      "short_name": "Demos",
+      "description": "Explore our CRO framework demos",
+      "url": "/demos",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Case Studies",
+      "short_name": "Cases",
+      "description": "Real results from real businesses",
+      "url": "/case-studies",
+      "icons": [
+        {
+          "src": "/favicon.svg",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

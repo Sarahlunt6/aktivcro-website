@@ -1,0 +1,163 @@
+---
+export interface ReviewData {
+  serviceName: string;
+  author: string;
+  rating: number;
+  reviewBody: string;
+  datePublished: string;
+  reviewerCompany?: string;
+  reviewerTitle?: string;
+  verified?: boolean;
+}
+
+export interface AggregateRatingData {
+  serviceName: string;
+  ratingValue: number;
+  reviewCount: number;
+  bestRating?: number;
+  worstRating?: number;
+}
+
+export interface Props {
+  reviews?: ReviewData[];
+  aggregateRating?: AggregateRatingData;
+  serviceType?: 'Service' | 'LocalBusiness' | 'Organization';
+}
+
+const { reviews = [], aggregateRating, serviceType = 'Service' } = Astro.props;
+
+// Generate individual review schema
+function generateReviewSchema(review: ReviewData) {
+  return {
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": serviceType,
+      "name": review.serviceName
+    },
+    "author": {
+      "@type": "Person",
+      "name": review.author,
+      ...(review.reviewerTitle && { "jobTitle": review.reviewerTitle }),
+      ...(review.reviewerCompany && { 
+        "worksFor": {
+          "@type": "Organization",
+          "name": review.reviewerCompany
+        }
+      })
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": review.rating,
+      "bestRating": 5,
+      "worstRating": 1
+    },
+    "reviewBody": review.reviewBody,
+    "datePublished": review.datePublished,
+    ...(review.verified && { "publisher": { "@type": "Organization", "name": "AktivCRO" } })
+  };
+}
+
+// Generate aggregate rating schema
+function generateAggregateRatingSchema(rating: AggregateRatingData) {
+  return {
+    "@context": "https://schema.org",
+    "@type": serviceType,
+    "name": rating.serviceName,
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": rating.ratingValue,
+      "reviewCount": rating.reviewCount,
+      "bestRating": rating.bestRating || 5,
+      "worstRating": rating.worstRating || 1
+    }
+  };
+}
+
+// Combine reviews into a single schema when multiple reviews exist
+function generateCombinedReviewSchema(reviews: ReviewData[], serviceName: string) {
+  if (reviews.length === 0) return null;
+  
+  return {
+    "@context": "https://schema.org",
+    "@type": serviceType,
+    "name": serviceName,
+    "review": reviews.map(generateReviewSchema),
+    "aggregateRating": aggregateRating ? {
+      "@type": "AggregateRating",
+      "ratingValue": aggregateRating.ratingValue,
+      "reviewCount": aggregateRating.reviewCount,
+      "bestRating": aggregateRating.bestRating || 5,
+      "worstRating": aggregateRating.worstRating || 1
+    } : undefined
+  };
+}
+
+// Determine which schema to generate
+let schemaData;
+
+if (reviews.length > 1) {
+  // Multiple reviews - use combined schema
+  schemaData = generateCombinedReviewSchema(reviews, reviews[0]?.serviceName || 'AktivCRO Services');
+} else if (reviews.length === 1) {
+  // Single review
+  schemaData = {
+    "@context": "https://schema.org",
+    ...generateReviewSchema(reviews[0])
+  };
+} else if (aggregateRating) {
+  // Only aggregate rating
+  schemaData = generateAggregateRatingSchema(aggregateRating);
+}
+
+// Clean up undefined values
+function cleanSchema(obj: any): any {
+  if (Array.isArray(obj)) {
+    return obj.map(cleanSchema).filter(item => item !== undefined);
+  } else if (obj !== null && typeof obj === 'object') {
+    const cleaned: any = {};
+    for (const [key, value] of Object.entries(obj)) {
+      const cleanedValue = cleanSchema(value);
+      if (cleanedValue !== undefined) {
+        cleaned[key] = cleanedValue;
+      }
+    }
+    return Object.keys(cleaned).length > 0 ? cleaned : undefined;
+  }
+  return obj;
+}
+
+const cleanedSchema = schemaData ? cleanSchema(schemaData) : null;
+---
+
+{cleanedSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(cleanedSchema, null, 0)} />
+)}
+
+<!-- Rich snippets microdata as fallback -->
+{reviews.length > 0 && (
+  <div style="display: none;">
+    <div itemscope itemtype="https://schema.org/Service">
+      <span itemprop="name">{reviews[0].serviceName}</span>
+      {reviews.map(review => (
+        <div itemprop="review" itemscope itemtype="https://schema.org/Review">
+          <div itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+            <meta itemprop="ratingValue" content={review.rating.toString()} />
+            <meta itemprop="bestRating" content="5" />
+          </div>
+          <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <span itemprop="name">{review.author}</span>
+          </span>
+          <meta itemprop="datePublished" content={review.datePublished} />
+          <span itemprop="reviewBody">{review.reviewBody}</span>
+        </div>
+      ))}
+      {aggregateRating && (
+        <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+          <meta itemprop="ratingValue" content={aggregateRating.ratingValue.toString()} />
+          <meta itemprop="reviewCount" content={aggregateRating.reviewCount.toString()} />
+          <meta itemprop="bestRating" content="5" />
+        </div>
+      )}
+    </div>
+  </div>
+)}

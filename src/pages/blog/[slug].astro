@@ -1,0 +1,234 @@
+---
+export const prerender = true;
+
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/ui/Container.astro';
+import Section from '../../components/ui/Section.astro';
+import Card from '../../components/ui/Card.astro';
+import Button from '../../components/ui/Button.astro';
+import Breadcrumb from '../../components/ui/Breadcrumb.astro';
+import OptimizedImage from '../../components/ui/OptimizedImage.astro';
+
+export async function getStaticPaths() {
+  const blogPosts = await getCollection('blog');
+  return blogPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Get related posts (same category, excluding current post)
+const allPosts = await getCollection('blog');
+const relatedPosts = allPosts
+  .filter(p => p.data.category === post.data.category && p.slug !== post.slug)
+  .slice(0, 3);
+
+// SEO optimized title and description
+const seoTitle = post.data.seoTitle || `${post.data.title} | AktivCRO Blog`;
+const seoDescription = post.data.seoDescription || post.data.description;
+---
+
+<BaseLayout 
+  title={seoTitle}
+  description={seoDescription}
+  ogImage={post.data.image || '/og-blog-default.svg'}
+>
+  <!-- Breadcrumb Navigation -->
+  <Section padding="sm" background="gray">
+    <Container>
+      <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "Blog", href: "/blog/" },
+        { name: post.data.title }
+      ]} />
+    </Container>
+  </Section>
+
+  <!-- Blog Post Hero -->
+  <Section background="white" padding="lg">
+    <Container>
+      <article class="max-w-4xl mx-auto">
+        <!-- Post Header -->
+        <header class="mb-12 text-center">
+          <div class="mb-6">
+            <span class="inline-block bg-primary-100 text-primary-800 text-sm font-medium px-3 py-1 rounded-full mb-4">
+              {post.data.category}
+            </span>
+            <p class="text-gray-500 mb-2">
+              Published on {post.data.publishDate.toLocaleDateString('en-US', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+              })}
+              • {post.data.readTime} min read
+            </p>
+            <p class="text-gray-600">By {post.data.author}</p>
+          </div>
+          
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 leading-tight">
+            {post.data.title}
+          </h1>
+          
+          <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            {post.data.description}
+          </p>
+        </header>
+
+        <!-- Featured Image -->
+        {post.data.image && (
+          <div class="mb-12">
+            <OptimizedImage 
+              src={post.data.image} 
+              alt={post.data.imageAlt || `${post.data.title} - Conversion Rate Optimization Guide`}
+              width={1200}
+              height={600}
+              loading="eager"
+              class="w-full h-64 md:h-96 object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        )}
+
+        <!-- Post Content -->
+        <div class="prose prose-lg prose-primary max-w-none mb-12">
+          <Content />
+        </div>
+
+        <!-- Post Tags -->
+        {post.data.tags && post.data.tags.length > 0 && (
+          <div class="mb-12 border-t border-gray-200 pt-8">
+            <h3 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Tags</h3>
+            <div class="flex flex-wrap gap-2">
+              {post.data.tags.map((tag) => (
+                <span class="inline-block bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full hover:bg-gray-200 transition-colors">
+                  {tag}
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+
+        <!-- Author Bio -->
+        <div class="bg-gray-50 rounded-lg p-8 mb-12">
+          <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center">
+                <span class="text-primary font-bold text-lg">AC</span>
+              </div>
+            </div>
+            <div class="flex-1">
+              <h3 class="text-lg font-semibold mb-2">{post.data.author}</h3>
+              <p class="text-gray-600 leading-relaxed">
+                The AktivCRO team consists of conversion optimization experts who have helped 100+ businesses 
+                achieve 200-400% improvements in website performance and lead generation. Our proven 4-framework 
+                system transforms underperforming websites into intelligent problem-solving platforms.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-primary text-white rounded-lg p-8 text-center mb-12">
+          <h3 class="text-2xl font-bold mb-4">Ready to Optimize Your Website?</h3>
+          <p class="text-xl mb-6 opacity-90">
+            Get a free conversion rate optimization consultation and discover how to increase your leads by 200-400%.
+          </p>
+          <Button variant="accent" size="lg" href="/contact">
+            Get Your Free CRO Consultation
+          </Button>
+        </div>
+      </article>
+    </Container>
+  </Section>
+
+  <!-- Related Posts -->
+  {relatedPosts.length > 0 && (
+    <Section background="gray" padding="lg">
+      <Container>
+        <div class="max-w-6xl mx-auto">
+          <h2 class="text-3xl font-bold text-center mb-12">Related Articles</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {relatedPosts.map((relatedPost) => (
+              <Card variant="hover" class="h-full">
+                <article class="h-full flex flex-col">
+                  {relatedPost.data.image && (
+                    <OptimizedImage 
+                      src={relatedPost.data.image} 
+                      alt={relatedPost.data.imageAlt || `${relatedPost.data.title} - CRO Article`}
+                      width={400}
+                      height={200}
+                      loading="lazy"
+                      class="w-full h-48 object-cover rounded-t-lg"
+                    />
+                  )}
+                  <div class="p-6 flex-1 flex flex-col">
+                    <div class="mb-4">
+                      <span class="inline-block bg-accent-100 text-accent-800 text-xs font-medium px-2.5 py-0.5 rounded-full mb-2">
+                        {relatedPost.data.category}
+                      </span>
+                      <p class="text-sm text-gray-500">
+                        {relatedPost.data.publishDate.toLocaleDateString()} • {relatedPost.data.readTime} min read
+                      </p>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3 flex-1">
+                      <a href={`/blog/${relatedPost.slug}/`} class="hover:text-primary transition-colors">
+                        {relatedPost.data.title}
+                      </a>
+                    </h3>
+                    <p class="text-gray-600 mb-4 text-sm">{relatedPost.data.description}</p>
+                    <div class="mt-auto">
+                      <Button variant="outline" size="sm" href={`/blog/${relatedPost.slug}/`}>
+                        Read Article
+                      </Button>
+                    </div>
+                  </div>
+                </article>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </Container>
+    </Section>
+  )}
+
+  <!-- Article Schema Markup -->
+  <script type="application/ld+json" define:vars={{ 
+    post: post.data,
+    slug: post.slug,
+    siteUrl: import.meta.env.SITE_URL || 'https://aktivcro.com'
+  }}>
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": post.title,
+      "description": post.description,
+      "image": post.image ? siteUrl + post.image : siteUrl + "/og-blog-default.svg",
+      "author": {
+        "@type": "Organization",
+        "name": post.author,
+        "url": siteUrl
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "AktivCRO",
+        "logo": {
+          "@type": "ImageObject",
+          "url": siteUrl + "/favicon.svg"
+        }
+      },
+      "datePublished": post.publishDate.toISOString(),
+      "dateModified": post.publishDate.toISOString(),
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": siteUrl + "/blog/" + slug + "/"
+      },
+      "keywords": post.tags ? post.tags.join(", ") : "",
+      "articleSection": post.category,
+      "wordCount": post.readTime * 250,
+      "timeRequired": "PT" + post.readTime + "M"
+    }
+  </script>
+</BaseLayout>

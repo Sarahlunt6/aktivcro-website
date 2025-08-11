@@ -1,0 +1,81 @@
+---
+export interface Props {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  loading?: 'lazy' | 'eager';
+  class?: string;
+  sizes?: string;
+  quality?: number;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  loading = 'lazy',
+  class: className = '',
+  sizes = '(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw',
+  quality = 80
+} = Astro.props;
+
+// Generate responsive image URLs
+const getOptimizedUrl = (imageSrc: string, format: string) => {
+  // Simple format conversion for now
+  // In production, integrate with Cloudflare Images, Vercel, or similar service
+  if (format === 'webp' && !imageSrc.includes('.webp')) {
+    return imageSrc.replace(/\.(jpe?g|png)$/i, '.webp');
+  }
+  return imageSrc;
+};
+
+// For now, use original URLs - will be enhanced with image service integration
+const webpSrc = src.replace(/\.(jpe?g|png)$/i, '.webp');
+const jpegSrc = src;
+
+// Detect if image should be preloaded (above fold)
+const shouldPreload = loading === 'eager';
+
+// Generate srcset for responsive images
+const generateSrcSet = (baseSrc: string) => {
+  if (!width) return baseSrc;
+  
+  const sizes = [width / 2, width, width * 1.5, width * 2].filter(size => size <= 2000);
+  return sizes.map(size => `${getOptimizedUrl(baseSrc, 'jpeg')} ${size}w`).join(', ');
+};
+---
+
+<!-- Preload critical images -->
+{shouldPreload && (
+  <link rel="preload" as="image" href={webpSrc} type="image/webp" />
+)}
+
+<picture class={`${className} optimized-image`}>
+  <!-- WebP format for modern browsers -->
+  <source 
+    type="image/webp" 
+    srcset={generateSrcSet(webpSrc)}
+    sizes={sizes}
+  />
+  
+  <!-- JPEG fallback for older browsers -->
+  <source 
+    type="image/jpeg" 
+    srcset={generateSrcSet(jpegSrc)}
+    sizes={sizes}
+  />
+  
+  <!-- Fallback img element -->
+  <img 
+    src={src}
+    alt={alt}
+    width={width}
+    height={height}
+    loading={loading}
+    decoding="async"
+    class={`w-full h-auto ${className}`}
+    style={width && height ? `aspect-ratio: ${width}/${height};` : undefined}
+  />
+</picture>

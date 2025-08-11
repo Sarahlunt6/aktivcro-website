@@ -1,0 +1,90 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#20466f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd147;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="600" fill="url(#bg)"/>
+  
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="600" fill="url(#grid)" />
+  
+  <!-- Main content area -->
+  <rect x="100" y="100" width="1000" height="400" fill="rgba(255,255,255,0.95)" rx="20"/>
+  
+  <!-- Chart visualization -->
+  <g transform="translate(150, 150)">
+    <!-- Chart background -->
+    <rect x="0" y="0" width="400" height="250" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    
+    <!-- Y-axis -->
+    <line x1="30" y1="30" x2="30" y2="220" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- X-axis -->
+    <line x1="30" y1="220" x2="370" y2="220" stroke="#64748b" stroke-width="2"/>
+    
+    <!-- Conversion rate improvement line -->
+    <path d="M 50 200 Q 120 180 200 120 T 350 60" fill="none" stroke="url(#accent)" stroke-width="4"/>
+    
+    <!-- Data points -->
+    <circle cx="50" cy="200" r="6" fill="#ffd147"/>
+    <circle cx="120" cy="160" r="6" fill="#ffd147"/>
+    <circle cx="200" cy="120" r="6" fill="#ffd147"/>
+    <circle cx="280" cy="80" r="6" fill="#ffd147"/>
+    <circle cx="350" cy="60" r="6" fill="#ffd147"/>
+    
+    <!-- Y-axis labels -->
+    <text x="20" y="225" text-anchor="end" fill="#64748b" font-size="12" font-family="Arial">0%</text>
+    <text x="20" y="175" text-anchor="end" fill="#64748b" font-size="12" font-family="Arial">2%</text>
+    <text x="20" y="125" text-anchor="end" fill="#64748b" font-size="12" font-family="Arial">5%</text>
+    <text x="20" y="75" text-anchor="end" fill="#64748b" font-size="12" font-family="Arial">8%</text>
+    <text x="20" y="40" text-anchor="end" fill="#64748b" font-size="12" font-family="Arial">10%</text>
+  </g>
+  
+  <!-- Conversion icons -->
+  <g transform="translate(600, 150)">
+    <!-- Browser window -->
+    <rect x="0" y="0" width="200" height="140" fill="#f8fafc" stroke="#e2e8f0" stroke-width="2" rx="8"/>
+    <rect x="0" y="0" width="200" height="30" fill="#e2e8f0" rx="8"/>
+    <circle cx="15" cy="15" r="4" fill="#ef4444"/>
+    <circle cx="35" cy="15" r="4" fill="#f59e0b"/>
+    <circle cx="55" cy="15" r="4" fill="#10b981"/>
+    
+    <!-- Website elements -->
+    <rect x="20" y="50" width="160" height="15" fill="#20466f" rx="3"/>
+    <rect x="20" y="75" width="100" height="10" fill="#64748b" rx="2"/>
+    <rect x="20" y="95" width="120" height="10" fill="#64748b" rx="2"/>
+    
+    <!-- CTA Button -->
+    <rect x="20" y="115" width="80" height="20" fill="url(#accent)" rx="4"/>
+    <text x="60" y="128" text-anchor="middle" fill="#1f2937" font-size="10" font-family="Arial" font-weight="bold">Get Started</text>
+  </g>
+  
+  <!-- Arrow showing improvement -->
+  <g transform="translate(850, 200)">
+    <path d="M 0 0 L 80 0 L 70 -10 M 80 0 L 70 10" fill="none" stroke="#10b981" stroke-width="3"/>
+    <text x="40" y="-15" text-anchor="middle" fill="#10b981" font-size="14" font-family="Arial" font-weight="bold">+400%</text>
+  </g>
+  
+  <!-- Title -->
+  <text x="600" y="80" text-anchor="middle" fill="white" font-size="36" font-family="Arial" font-weight="bold">
+    CRO Guide 2024
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="520" text-anchor="middle" fill="white" font-size="18" font-family="Arial">
+    Complete Conversion Rate Optimization Strategy
+  </text>
+</svg>

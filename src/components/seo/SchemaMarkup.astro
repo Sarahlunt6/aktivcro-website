@@ -1,0 +1,298 @@
+---
+export interface OrganizationSchema {
+  name: string;
+  url: string;
+  logo?: string;
+  description?: string;
+  address?: {
+    streetAddress?: string;
+    addressLocality?: string;
+    addressRegion?: string;
+    postalCode?: string;
+    addressCountry?: string;
+  };
+  contactPoint?: {
+    telephone?: string;
+    contactType?: string;
+    email?: string;
+  };
+  sameAs?: string[];
+}
+
+export interface ServiceSchema {
+  name: string;
+  description: string;
+  provider: string;
+  areaServed?: string;
+  serviceType?: string;
+  offers?: {
+    price?: string;
+    priceCurrency?: string;
+    priceValidUntil?: string;
+    description?: string;
+  }[];
+}
+
+export interface LocalBusinessSchema {
+  name: string;
+  description: string;
+  url: string;
+  telephone?: string;
+  address?: {
+    streetAddress?: string;
+    addressLocality?: string;
+    addressRegion?: string;
+    postalCode?: string;
+    addressCountry?: string;
+  };
+  openingHours?: string[];
+  priceRange?: string;
+  image?: string[];
+}
+
+export interface ArticleSchema {
+  headline: string;
+  description: string;
+  author: string;
+  datePublished: string;
+  dateModified?: string;
+  image?: string;
+  url: string;
+}
+
+export interface WebsiteSchema {
+  name: string;
+  url: string;
+  description?: string;
+  inLanguage?: string;
+  potentialAction?: {
+    target: string;
+    queryInput?: string;
+  };
+}
+
+export interface Props {
+  type: 'organization' | 'service' | 'localbusiness' | 'article' | 'website' | 'breadcrumb' | 'review' | 'faq';
+  data: any;
+}
+
+const { type, data } = Astro.props;
+
+function generateOrganizationSchema(orgData: OrganizationSchema) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${orgData.url}#organization`,
+    "name": orgData.name,
+    "url": orgData.url,
+    "logo": orgData.logo ? {
+      "@type": "ImageObject",
+      "url": orgData.logo,
+      "width": 400,
+      "height": 400
+    } : undefined,
+    "description": orgData.description,
+    "address": orgData.address ? {
+      "@type": "PostalAddress",
+      ...orgData.address
+    } : undefined,
+    "contactPoint": orgData.contactPoint ? {
+      "@type": "ContactPoint",
+      ...orgData.contactPoint
+    } : undefined,
+    "sameAs": orgData.sameAs
+  };
+}
+
+function generateServiceSchema(serviceData: ServiceSchema) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": serviceData.name,
+    "description": serviceData.description,
+    "provider": {
+      "@type": "Organization",
+      "name": serviceData.provider
+    },
+    "areaServed": serviceData.areaServed,
+    "serviceType": serviceData.serviceType,
+    "offers": serviceData.offers?.map(offer => ({
+      "@type": "Offer",
+      ...offer
+    }))
+  };
+}
+
+function generateLocalBusinessSchema(businessData: LocalBusinessSchema) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": businessData.name,
+    "description": businessData.description,
+    "url": businessData.url,
+    "telephone": businessData.telephone,
+    "address": businessData.address ? {
+      "@type": "PostalAddress",
+      ...businessData.address
+    } : undefined,
+    "openingHours": businessData.openingHours,
+    "priceRange": businessData.priceRange,
+    "image": businessData.image
+  };
+}
+
+function generateArticleSchema(articleData: ArticleSchema) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": articleData.headline,
+    "description": articleData.description,
+    "author": {
+      "@type": "Person",
+      "name": articleData.author
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AktivCRO",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://aktivcro.com/favicon.svg"
+      }
+    },
+    "datePublished": articleData.datePublished,
+    "dateModified": articleData.dateModified || articleData.datePublished,
+    "image": articleData.image ? {
+      "@type": "ImageObject",
+      "url": articleData.image
+    } : undefined,
+    "url": articleData.url,
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": articleData.url
+    }
+  };
+}
+
+function generateWebsiteSchema(websiteData: WebsiteSchema) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": websiteData.name,
+    "url": websiteData.url,
+    "description": websiteData.description,
+    "inLanguage": websiteData.inLanguage || "en-US",
+    "potentialAction": websiteData.potentialAction ? {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": websiteData.potentialAction.target
+      },
+      "query-input": websiteData.potentialAction.queryInput || "required name=search_term_string"
+    } : undefined
+  };
+}
+
+function generateBreadcrumbSchema(breadcrumbData: any) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbData.items.map((item: any, index: number) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": item.href ? `${breadcrumbData.baseUrl}${item.href}` : undefined
+    }))
+  };
+}
+
+function generateReviewSchema(reviewData: any) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "itemReviewed": {
+      "@type": "Service",
+      "name": reviewData.serviceName
+    },
+    "author": {
+      "@type": "Person",
+      "name": reviewData.author
+    },
+    "reviewRating": {
+      "@type": "Rating",
+      "ratingValue": reviewData.rating,
+      "bestRating": 5
+    },
+    "reviewBody": reviewData.body,
+    "datePublished": reviewData.datePublished
+  };
+}
+
+function generateFAQSchema(faqData: any) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqData.questions.map((faq: any) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  };
+}
+
+let schemaData;
+
+switch (type) {
+  case 'organization':
+    schemaData = generateOrganizationSchema(data);
+    break;
+  case 'service':
+    schemaData = generateServiceSchema(data);
+    break;
+  case 'localbusiness':
+    schemaData = generateLocalBusinessSchema(data);
+    break;
+  case 'article':
+    schemaData = generateArticleSchema(data);
+    break;
+  case 'website':
+    schemaData = generateWebsiteSchema(data);
+    break;
+  case 'breadcrumb':
+    schemaData = generateBreadcrumbSchema(data);
+    break;
+  case 'review':
+    schemaData = generateReviewSchema(data);
+    break;
+  case 'faq':
+    schemaData = generateFAQSchema(data);
+    break;
+  default:
+    schemaData = null;
+}
+
+// Clean up undefined values
+function cleanSchema(obj: any): any {
+  if (Array.isArray(obj)) {
+    return obj.map(cleanSchema).filter(item => item !== undefined);
+  } else if (obj !== null && typeof obj === 'object') {
+    const cleaned: any = {};
+    for (const [key, value] of Object.entries(obj)) {
+      const cleanedValue = cleanSchema(value);
+      if (cleanedValue !== undefined) {
+        cleaned[key] = cleanedValue;
+      }
+    }
+    return Object.keys(cleaned).length > 0 ? cleaned : undefined;
+  }
+  return obj;
+}
+
+const cleanedSchema = schemaData ? cleanSchema(schemaData) : null;
+---
+
+{cleanedSchema && (
+  <script type="application/ld+json" set:html={JSON.stringify(cleanedSchema, null, 0)} />
+)}

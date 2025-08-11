@@ -1,0 +1,67 @@
+---
+export interface Props {
+  items: Array<{
+    name: string;
+    href?: string;
+  }>;
+  class?: string;
+}
+
+const { items, class: className = "" } = Astro.props;
+---
+
+<nav class={`breadcrumb ${className}`} aria-label="Breadcrumb">
+  <ol class="flex flex-wrap items-center gap-1 text-sm text-gray-600">
+    {items.map((item, index) => (
+      <li class="flex items-center">
+        {index > 0 && (
+          <svg 
+            class="w-4 h-4 mx-2 text-gray-400" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        )}
+        {item.href && index < items.length - 1 ? (
+          <a 
+            href={item.href}
+            class="hover:text-primary transition-colors duration-200"
+            itemprop="item"
+          >
+            <span itemprop="name">{item.name}</span>
+          </a>
+        ) : (
+          <span class="text-gray-900 font-medium" itemprop="name" aria-current={index === items.length - 1 ? "page" : undefined}>
+            {item.name}
+          </span>
+        )}
+        <meta itemprop="position" content={index + 1} />
+      </li>
+    ))}
+  </ol>
+
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json" define:vars={{ breadcrumbItems: items }}>
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbItems.map((item, index) => ({
+        "@type": "ListItem",
+        "position": index + 1,
+        "name": item.name,
+        "item": item.href ? (import.meta.env.SITE_URL || 'https://aktivcro.com') + item.href : undefined
+      }))
+    }
+  </script>
+</nav>
+
+<style>
+  .breadcrumb ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+</style>
