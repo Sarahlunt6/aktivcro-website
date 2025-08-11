@@ -138,10 +138,10 @@ const PricingSection: React.FC = () => {
           'prefill[source]': 'pricing_page'
         });
         
-        const calendlyUrl = `https://calendly.com/aktivcro/strategy-call?${params.toString()}`;
+        const ghlUrl = `https://api.leadconnectorhq.com/widget/booking/hCr9hGNBqVfKjgpizPHV?${params.toString()}`;
         
         // Open in same tab for better conversion tracking
-        window.location.href = calendlyUrl;
+        window.location.href = ghlUrl;
       }, 800);
     } catch (error) {
       console.error('Error:', error);
@@ -166,7 +166,7 @@ const PricingSection: React.FC = () => {
     const params = new URLSearchParams({
       'prefill[source]': 'pricing_consultation'
     });
-    window.location.href = `https://calendly.com/aktivcro/strategy-call?${params.toString()}`;
+    window.location.href = `https://api.leadconnectorhq.com/widget/booking/hCr9hGNBqVfKjgpizPHV?${params.toString()}`;
   };
 
   return (

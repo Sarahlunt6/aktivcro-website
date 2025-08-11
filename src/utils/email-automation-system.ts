@@ -934,7 +934,7 @@ Book Strategy Session: https://aktivcro.com/book-consultation
         
         <div style="text-align: center; margin-bottom: 25px;">
           <p style="color: #444; font-size: 16px; margin-bottom: 15px;">Let's schedule a 20-minute strategy call to discuss your specific situation.</p>
-          <a href="https://aktivcro.com/book-strategy-call" style="background: #20466f; color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; font-size: 18px;">Schedule Strategy Call →</a>
+          <a href="https://api.leadconnectorhq.com/widget/booking/hCr9hGNBqVfKjgpizPHV" style="background: #20466f; color: white; padding: 15px 35px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; font-size: 18px;">Schedule Strategy Call →</a>
         </div>
         
         <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #eee;">
@@ -964,7 +964,7 @@ Companies similar to {{company}} typically see:
 • $500K+ additional revenue in year one
 
 Let's schedule a 20-minute strategy call to discuss your specific situation.
-Schedule Strategy Call: https://aktivcro.com/book-strategy-call
+Schedule Strategy Call: https://api.leadconnectorhq.com/widget/booking/hCr9hGNBqVfKjgpizPHV
 
 Sarah Lunt
 Founder & CEO
