@@ -115,7 +115,7 @@ const AnimatedHero: React.FC<AnimatedHeroProps> = ({ onCTAClick }) => {
         {/* Main Headline */}
         <motion.h1
           variants={itemVariants}
-          className="text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight"
+          className="hero-headline text-4xl md:text-5xl lg:text-6xl font-black mb-6 leading-tight"
         >
           <span className="bg-gradient-to-r from-primary to-primary-800 bg-clip-text text-transparent">
             Stop Losing 95% of Visitors
@@ -133,7 +133,7 @@ const AnimatedHero: React.FC<AnimatedHeroProps> = ({ onCTAClick }) => {
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
+          className="hero-subheadline text-xl md:text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed"
         >
           Our proven 4-framework system transforms underperforming websites into intelligent platforms that 
           <span className="font-semibold text-primary"> convert 3-4x more visitors into qualified leads</span> in just 30 days
@@ -149,7 +149,7 @@ const AnimatedHero: React.FC<AnimatedHeroProps> = ({ onCTAClick }) => {
             variants={buttonVariants}
             whileHover="hover"
             whileTap="tap"
-            className="group relative overflow-hidden bg-primary text-white px-8 py-4 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+            className="homepage-cta primary-cta group relative overflow-hidden bg-primary text-white px-8 py-4 rounded-lg text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300"
           >
             <span className="relative z-10 flex items-center">
               Get Your Free Demo Now
@@ -179,7 +179,7 @@ const AnimatedHero: React.FC<AnimatedHeroProps> = ({ onCTAClick }) => {
         {/* Trust Indicators */}
         <motion.div
           variants={itemVariants}
-          className="flex flex-wrap justify-center items-center gap-8 opacity-60"
+          className="social-proof-container flex flex-wrap justify-center items-center gap-8 opacity-60"
         >
           <div className="flex items-center text-sm text-gray-500">
             <svg className="w-5 h-5 mr-2 text-success" fill="currentColor" viewBox="0 0 20 20">
@@ -199,6 +199,13 @@ const AnimatedHero: React.FC<AnimatedHeroProps> = ({ onCTAClick }) => {
             </svg>
             30-Day Results Guarantee
           </div>
+        </motion.div>
+
+        {/* Urgency Container - Will be populated by personalization */}
+        <motion.div
+          variants={itemVariants}
+          className="urgency-container mt-8"
+        >
         </motion.div>
       </motion.div>
 

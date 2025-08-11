@@ -7,6 +7,7 @@ import Section from '../../components/ui/Section.astro';
 import Button from '../../components/ui/Button.astro';
 import Card from '../../components/ui/Card.astro';
 import Badge from '../../components/ui/Badge.astro';
+import CREDemoInteractive from '../../components/interactive/CREDemoInteractive.tsx';
 ---
 
 <BaseLayout 
@@ -110,121 +111,8 @@ import Badge from '../../components/ui/Badge.astro';
         </p>
       </div>
 
-      <!-- Demo Container -->
-      <div class="max-w-6xl mx-auto">
-        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
-          <!-- Demo Navigation -->
-          <div class="bg-gray-100 px-6 py-4 border-b flex items-center justify-between">
-            <div class="flex items-center space-x-4">
-              <div class="flex space-x-2">
-                <div class="w-3 h-3 bg-red-400 rounded-full"></div>
-                <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
-                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
-              </div>
-              <div class="bg-white px-4 py-2 rounded-lg text-sm text-gray-600 flex-1">
-                https://demo-realestate.aktivcro.com
-              </div>
-            </div>
-            <Badge variant="success">Live Demo</Badge>
-          </div>
-
-          <!-- Demo Content -->
-          <div class="aspect-video bg-gradient-to-br from-success-50 to-primary-50 relative overflow-hidden">
-            <!-- Simulated Real Estate Website -->
-            <div class="absolute inset-4 bg-white rounded-lg shadow-lg overflow-hidden">
-              <!-- Header -->
-              <div class="bg-success text-white p-4 flex items-center justify-between">
-                <div class="font-bold text-lg">MetroRealty Group</div>
-                <div class="flex space-x-4 text-sm">
-                  <span>Buy</span>
-                  <span>Sell</span>
-                  <span>Market Reports</span>
-                  <span class="bg-accent text-success px-3 py-1 rounded-full">Get Valuation</span>
-                </div>
-              </div>
-              
-              <!-- Hero Section -->
-              <div class="p-6">
-                <div class="grid grid-cols-2 gap-4">
-                  <!-- Left: Search Tool -->
-                  <div>
-                    <h1 class="text-xl font-bold text-gray-900 mb-3">Find Your Dream Property</h1>
-                    <div class="bg-gray-50 p-4 rounded-lg">
-                      <div class="grid grid-cols-2 gap-2 mb-3">
-                        <input type="text" placeholder="Location" class="text-xs p-2 border rounded">
-                        <select class="text-xs p-2 border rounded">
-                          <option>Price Range</option>
-                        </select>
-                      </div>
-                      <div class="grid grid-cols-2 gap-2 mb-3">
-                        <select class="text-xs p-2 border rounded">
-                          <option>Bedrooms</option>
-                        </select>
-                        <select class="text-xs p-2 border rounded">
-                          <option>Property Type</option>
-                        </select>
-                      </div>
-                      <button class="w-full bg-success text-white py-2 rounded text-sm font-semibold">
-                        Search Properties
-                      </button>
-                    </div>
-                  </div>
-                  
-                  <!-- Right: Featured Property -->
-                  <div>
-                    <div class="bg-gray-200 rounded-lg p-3 text-center">
-                      <div class="text-sm font-semibold mb-2">Featured Property</div>
-                      <div class="bg-gray-300 h-16 rounded mb-2"></div>
-                      <div class="text-lg font-bold text-success">$650,000</div>
-                      <div class="text-xs text-gray-600">3 bed • 2 bath • Downtown</div>
-                      <button class="mt-2 text-xs bg-success text-white px-3 py-1 rounded">
-                        Schedule Tour
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                
-                <!-- Market Tools -->
-                <div class="mt-4 grid grid-cols-3 gap-2 text-xs">
-                  <div class="bg-blue-50 p-2 rounded text-center">
-                    <div class="font-semibold text-blue-800">Home Valuation</div>
-                    <div class="text-blue-600">Get instant estimate</div>
-                  </div>
-                  <div class="bg-green-50 p-2 rounded text-center">
-                    <div class="font-semibold text-green-800">Market Report</div>
-                    <div class="text-green-600">Area trends & data</div>
-                  </div>
-                  <div class="bg-purple-50 p-2 rounded text-center">
-                    <div class="font-semibold text-purple-800">Mortgage Calc</div>
-                    <div class="text-purple-600">Payment estimates</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Interactive Hotspots -->
-            <div class="absolute top-20 right-8 w-4 h-4 bg-success rounded-full animate-pulse cursor-pointer" title="Instant property valuation tool"></div>
-            <div class="absolute bottom-32 left-8 w-4 h-4 bg-primary rounded-full animate-pulse cursor-pointer" title="Smart search with filters"></div>
-            <div class="absolute bottom-20 center w-4 h-4 bg-accent-600 rounded-full animate-pulse cursor-pointer" title="Featured property showcase"></div>
-          </div>
-
-          <!-- Demo Controls -->
-          <div class="bg-gray-50 px-6 py-4 border-t">
-            <div class="flex items-center justify-between">
-              <div class="text-sm text-gray-600">
-                Click the hotspots to explore CRE Framework features
-              </div>
-              <div class="flex items-center space-x-4">
-                <button class="text-sm text-success hover:underline">← Before</button>
-                <button class="text-sm text-success hover:underline">After →</button>
-                <Button variant="success" size="sm" href="#get-started">
-                  Get This Framework
-                </Button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Interactive Demo Container -->
+      <CREDemoInteractive client:visible />
     </Container>
   </Section>
 

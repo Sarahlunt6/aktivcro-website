@@ -1,7 +1,7 @@
 ---
 export interface Props {
   padding?: 'none' | 'sm' | 'md' | 'lg';
-  background?: 'transparent' | 'white' | 'gray' | 'primary' | 'accent';
+  background?: 'transparent' | 'white' | 'gray' | 'primary' | 'accent' | 'success';
   class?: string;
 }
 
@@ -24,7 +24,8 @@ const backgrounds = {
   white: 'bg-white',
   gray: 'bg-gray-50',
   primary: 'bg-primary text-white',
-  accent: 'bg-accent text-gray-900'
+  accent: 'bg-accent text-gray-900',
+  success: 'bg-success text-white'
 };
 
 const classes = `${paddings[padding]} ${backgrounds[background]} ${className}`;
