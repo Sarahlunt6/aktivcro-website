@@ -6,12 +6,23 @@ import Container from '../components/ui/Container.astro';
 import Section from '../components/ui/Section.astro';
 import Button from '../components/ui/Button.astro';
 import Card from '../components/ui/Card.astro';
+import Breadcrumb from '../components/ui/Breadcrumb.astro';
 ---
 
 <BaseLayout 
-  title="About AktivCRO - Conversion Optimization Experts"
-  description="Learn about AktivCRO's mission to transform static websites into intelligent, conversion-optimized platforms. Meet our team and discover our proven methodology."
+  title="About AktivCRO - CRO Experts Specializing in Lead Generation Optimization"
+  description="Meet the conversion optimization experts behind AktivCRO. Learn how our proven methodology has helped 100+ businesses increase conversion rates by 200-400% with intelligent website frameworks and A/B testing."
 >
+  <!-- Breadcrumb Navigation -->
+  <Section padding="sm" background="gray">
+    <Container>
+      <Breadcrumb items={[
+        { name: "Home", href: "/" },
+        { name: "About Us" }
+      ]} />
+    </Container>
+  </Section>
+
   <!-- Hero Section -->
   <Section background="primary" padding="lg">
     <Container>

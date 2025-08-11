@@ -21,6 +21,9 @@ const {
   noFooter = false
 } = Astro.props;
 
+// SEO-optimized image alt text
+const ogImageAlt = 'AktivCRO Conversion Rate Optimization Services - Transform Your Website Into a Lead Generation Machine';
+
 const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astro.url;
 ---
 
@@ -91,22 +94,111 @@ const canonicalURL = Astro.site ? new URL(Astro.url.pathname, Astro.site) : Astr
     }}>
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": ["Organization", "LocalBusiness", "ProfessionalService"],
         "name": "AktivCRO",
-        "description": "Conversion rate optimization service that transforms static websites into intelligent problem-solving platforms",
+        "alternateName": "Aktiv CRO",
+        "description": "Professional conversion rate optimization service that transforms static websites into intelligent problem-solving platforms. Specializing in lead generation, A/B testing, and website performance optimization.",
         "url": siteUrl,
-        "logo": siteUrl + "/logo.png",
+        "logo": siteUrl + "/favicon.svg",
+        "image": siteUrl + "/og-image.svg",
+        "foundingDate": "2024",
+        "founders": [
+          {
+            "@type": "Person",
+            "name": "AktivCRO Team"
+          }
+        ],
         "sameAs": [
           "https://www.linkedin.com/company/2911272/admin/dashboard/",
           "https://www.facebook.com/opkie",
           "https://www.youtube.com/@opkiebiz",
           "https://www.instagram.com/opkie/"
         ],
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Customer Service",
-          "email": contactEmail,
-          "url": "https://calendly.com/aktivcro/strategy-call"
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "Customer Service",
+            "email": contactEmail,
+            "url": "https://calendly.com/aktivcro/strategy-call",
+            "availableLanguage": "English"
+          },
+          {
+            "@type": "ContactPoint", 
+            "contactType": "Sales",
+            "email": contactEmail,
+            "telephone": "+1-555-123-4567",
+            "availableLanguage": "English"
+          }
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "US",
+          "addressRegion": "Remote"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "39.8283",
+          "longitude": "-98.5795"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "serviceType": "Conversion Rate Optimization",
+        "priceRange": "$$$",
+        "paymentAccepted": ["Credit Card", "Bank Transfer", "Invoice"],
+        "currenciesAccepted": "USD"
+      }
+    </script>
+
+    <!-- Service Schema -->
+    <script type="application/ld+json" define:vars={{ 
+      siteUrl: import.meta.env.SITE_URL || 'https://aktivcro.com'
+    }}>
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Conversion Rate Optimization Services",
+        "description": "Professional CRO services including website audits, A/B testing, lead generation optimization, and conversion funnel analysis.",
+        "provider": {
+          "@type": "Organization",
+          "name": "AktivCRO",
+          "url": siteUrl
+        },
+        "serviceType": "Digital Marketing",
+        "category": "Conversion Rate Optimization",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Foundation Package",
+            "description": "Intelligent framework selection and implementation with mobile optimization",
+            "price": "5000",
+            "priceCurrency": "USD",
+            "availability": "InStock",
+            "url": siteUrl + "/#pricing"
+          },
+          {
+            "@type": "Offer", 
+            "name": "Growth Package",
+            "description": "Complete foundation plus custom micro-experiences and advanced tracking",
+            "price": "5000",
+            "priceCurrency": "USD", 
+            "availability": "InStock",
+            "url": siteUrl + "/#pricing"
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise Platform", 
+            "description": "Full platform transformation with ongoing optimization and dedicated support",
+            "price": "15000",
+            "priceCurrency": "USD",
+            "availability": "InStock", 
+            "url": siteUrl + "/#pricing"
+          }
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
         }
       }
     </script>

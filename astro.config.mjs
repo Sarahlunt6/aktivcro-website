@@ -2,10 +2,11 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
-import vercel from '@astrojs/vercel/serverless';
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
+  site: 'https://aktivcro.com', // Required for sitemap and canonical URLs
   integrations: [
     react(),
     tailwind({
@@ -23,11 +24,23 @@ export default defineConfig({
       rollupOptions: {
         output: {
           manualChunks: {
-            'framer-motion': ['framer-motion'],
-            'stripe': ['@stripe/stripe-js'],
-            'react-vendor': ['react', 'react-dom']
+            'vendor': ['react', 'react-dom'],
+            'framer': ['framer-motion'],
+            'utils': ['zod']
           }
         }
+      },
+      minify: 'esbuild',
+      target: 'es2020',
+      cssCodeSplit: true,
+      sourcemap: false
+    },
+    optimizeDeps: {
+      include: ['react', 'react-dom', 'framer-motion']
+    },
+    server: {
+      fs: {
+        strict: false
       }
     }
   },

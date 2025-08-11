@@ -148,14 +148,19 @@ export const POST: APIRoute = async ({ request }) => {
 
   } catch (error) {
     console.error('Demo generation error:', error);
-    return new Response(JSON.stringify({ 
+    const response = new Response(JSON.stringify({ 
       success: false, 
       error: 'Internal server error' 
     }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' }
     });
+    return setCORSHeaders(response, request);
   }
+};
+
+export const OPTIONS: APIRoute = async ({ request }) => {
+  return handleCORSPreflight(request) || new Response(null, { status: 405 });
 };
 
 function calculateLeadScore(formData: DemoFormData): number {

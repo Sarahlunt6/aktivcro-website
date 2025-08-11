@@ -13,11 +13,14 @@ import FrameworkShowcase from '../components/interactive/FrameworkShowcase.tsx';
 import DemoHomepageGenerator from '../components/interactive/DemoHomepageGenerator.tsx';
 import ConversionCalculator from '../components/interactive/ConversionCalculator.tsx';
 import PricingSection from '../components/interactive/PricingSection.tsx';
+import FAQAccordion from '../components/interactive/FAQAccordion.tsx';
+import FAQSchema from '../components/seo/FAQSchema.astro';
+import AdvancedIntegration from '../components/integration/AdvancedIntegration.tsx';
 ---
 
 <BaseLayout 
-	title="AktivCRO - Transform Your Website Into an Intelligent Problem-Solving Platform"
-	description="Systematic conversion optimization + instant value delivery = 200-400% more leads. Experience the power of intelligent website frameworks."
+	title="Conversion Rate Optimization Services - Increase Leads by 400% | AktivCRO"
+	description="Professional CRO services that transform underperforming websites into lead generation machines. Get 200-400% more qualified leads with our proven 4-framework system. Free consultation available."
 >
 		<!-- Animated Hero Section -->
 		<AnimatedHero client:load />
@@ -42,10 +45,10 @@ import PricingSection from '../components/interactive/PricingSection.tsx';
 			<Container>
 				<h2 class="text-3xl font-bold text-center mb-12">Built with Performance in Mind</h2>
 				<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-					<Card variant="hover">
+					<Card variant="hover" class="hover-lift">
 						<div class="text-center">
 							<div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-								<svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-6 h-6 text-primary animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="animation-delay: 0.5s">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
 								</svg>
 							</div>
@@ -55,9 +58,9 @@ import PricingSection from '../components/interactive/PricingSection.tsx';
 						</div>
 					</Card>
 
-					<Card variant="hover">
+					<Card variant="hover" class="hover-lift">
 						<div class="text-center">
-							<div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+							<div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center mx-auto mb-4 animate-pulse">
 								<svg class="w-6 h-6 text-accent-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
 								</svg>
@@ -68,10 +71,10 @@ import PricingSection from '../components/interactive/PricingSection.tsx';
 						</div>
 					</Card>
 
-					<Card variant="hover">
+					<Card variant="hover" class="hover-lift">
 						<div class="text-center">
 							<div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-								<svg class="w-6 h-6 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+								<svg class="w-6 h-6 text-success animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="animation-delay: 1s">
 									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
 								</svg>
 							</div>
@@ -83,4 +86,93 @@ import PricingSection from '../components/interactive/PricingSection.tsx';
 				</div>
 			</Container>
 		</Section>
+
+		<!-- FAQ Section for SEO & Voice Search -->
+		<Section background="white" padding="lg">
+			<Container>
+				<div class="max-w-4xl mx-auto">
+					<div class="text-center mb-16">
+						<h2 class="text-3xl md:text-4xl font-bold mb-6">Frequently Asked Questions</h2>
+						<p class="text-xl text-gray-600">
+							Common questions about conversion rate optimization and our services
+						</p>
+					</div>
+
+					<FAQAccordion client:load faqs={[
+						{
+							question: "What is conversion rate optimization?",
+							answer: "Conversion rate optimization (CRO) is the systematic process of improving your website to increase the percentage of visitors who complete desired actions, such as making purchases, signing up for newsletters, or requesting quotes. Our proven methodology combines data analysis, user behavior research, A/B testing, and intelligent website frameworks to transform underperforming websites into lead generation machines."
+						},
+						{
+							question: "How much can conversion rate optimization increase my leads?",
+							answer: "Our clients typically see 200-400% increases in lead generation within 60 days of implementing our conversion optimization strategies. Results vary based on your current performance, industry, and target audience, but our proven 4-framework system consistently delivers significant improvements in conversion rates and revenue growth."
+						},
+						{
+							question: "What's included in your conversion optimization services?",
+							answer: "Our comprehensive CRO services include website audits, user behavior analysis, A/B testing, landing page optimization, conversion funnel analysis, mobile optimization, lead generation system setup, and ongoing performance monitoring. We also provide custom micro-experiences and intelligent website frameworks tailored to your specific business goals and target audience."
+						},
+						{
+							question: "How long does it take to see results from CRO?",
+							answer: "Most clients begin seeing measurable improvements in conversion rates within 2-4 weeks of implementation. Significant results typically occur within 60 days, with our 30-day performance guarantee ensuring you see meaningful improvements in your website's lead generation capabilities. Long-term optimization continues to deliver compounding results over 6-12 months."
+						},
+						{
+							question: "Do you offer a guarantee on conversion optimization results?",
+							answer: "Yes, we offer a 30-day performance guarantee on all our conversion optimization services. If you don't see measurable improvements in your website's conversion rates within 30 days, we'll work with you to address any concerns or provide a refund. Our confidence comes from our proven track record of helping 100+ businesses achieve 200-400% conversion rate improvements."
+						},
+						{
+							question: "What makes AktivCRO different from other CRO agencies?",
+							answer: "AktivCRO specializes in transforming static websites into intelligent problem-solving platforms using our proprietary 4-framework system. Unlike traditional CRO agencies that focus solely on A/B testing, we combine conversion optimization with advanced lead generation strategies, custom micro-experiences, and intelligent website frameworks that adapt to user behavior in real-time."
+						}
+					]} />
+
+					<div class="text-center mt-12">
+						<Button variant="primary" size="lg" href="/contact">
+							Get Your Free CRO Consultation
+						</Button>
+						<p class="mt-6 text-gray-600">
+							Learn more conversion optimization strategies in our <a href="/blog/" class="text-primary underline hover:text-primary-700">CRO blog</a>
+						</p>
+					</div>
+				</div>
+			</Container>
+		</Section>
+
+		<!-- FAQ Schema for SEO -->
+		<FAQSchema faqs={[
+			{
+				question: "What is conversion rate optimization?",
+				answer: "Conversion rate optimization (CRO) is the systematic process of improving your website to increase the percentage of visitors who complete desired actions, such as making purchases, signing up for newsletters, or requesting quotes. Our proven methodology combines data analysis, user behavior research, A/B testing, and intelligent website frameworks to transform underperforming websites into lead generation machines."
+			},
+			{
+				question: "How much can conversion rate optimization increase my leads?",
+				answer: "Our clients typically see 200-400% increases in lead generation within 60 days of implementing our conversion optimization strategies. Results vary based on your current performance, industry, and target audience, but our proven 4-framework system consistently delivers significant improvements in conversion rates and revenue growth."
+			},
+			{
+				question: "What's included in your conversion optimization services?",
+				answer: "Our comprehensive CRO services include website audits, user behavior analysis, A/B testing, landing page optimization, conversion funnel analysis, mobile optimization, lead generation system setup, and ongoing performance monitoring. We also provide custom micro-experiences and intelligent website frameworks tailored to your specific business goals and target audience."
+			},
+			{
+				question: "How long does it take to see results from CRO?",
+				answer: "Most clients begin seeing measurable improvements in conversion rates within 2-4 weeks of implementation. Significant results typically occur within 60 days, with our 30-day performance guarantee ensuring you see meaningful improvements in your website's lead generation capabilities. Long-term optimization continues to deliver compounding results over 6-12 months."
+			},
+			{
+				question: "Do you offer a guarantee on conversion optimization results?", 
+				answer: "Yes, we offer a 30-day performance guarantee on all our conversion optimization services. If you don't see measurable improvements in your website's conversion rates within 30 days, we'll work with you to address any concerns or provide a refund. Our confidence comes from our proven track record of helping 100+ businesses achieve 200-400% conversion rate improvements."
+			},
+			{
+				question: "What makes AktivCRO different from other CRO agencies?",
+				answer: "AktivCRO specializes in transforming static websites into intelligent problem-solving platforms using our proprietary 4-framework system. Unlike traditional CRO agencies that focus solely on A/B testing, we combine conversion optimization with advanced lead generation strategies, custom micro-experiences, and intelligent website frameworks that adapt to user behavior in real-time."
+			}
+		]} />
+
+		<!-- Advanced Integration - Analytics, Chat, Personalization, A/B Testing, etc. -->
+		<AdvancedIntegration 
+			client:only="react"
+			enableChat={true}
+			enableABTesting={true}
+			enableEmailAutomation={true}
+			enablePersonalization={true}
+			chatPosition="bottom-right"
+			personalizationDebug={true}
+		/>
 </BaseLayout>

@@ -2,72 +2,105 @@ import type { APIRoute } from 'astro';
 import type { LeadData } from '../../utils/lead-scoring';
 import { calculateLeadScore } from '../../utils/lead-scoring';
 import { formatForGHL, sendToGHL, triggerGHLWorkflow, getWorkflowId } from '../../utils/ghl-integration';
+import { checkRateLimit, getClientIdentifier, RATE_LIMITS } from '../../utils/rate-limiter';
+import { leadCaptureSchema, validateInput, detectBot, validateCSRF } from '../../utils/validation-schemas';
 
-// Enhanced lead capture endpoint for form submissions
+// Enhanced lead capture endpoint with security features
 export const POST: APIRoute = async ({ request }) => {
   try {
+    // Rate limiting check
+    const clientId = getClientIdentifier(request);
+    const rateLimitResult = checkRateLimit(clientId, RATE_LIMITS.LEAD_CAPTURE);
+    
+    if (!rateLimitResult.allowed) {
+      return new Response(
+        JSON.stringify({
+          success: false,
+          error: 'Rate limit exceeded',
+          message: rateLimitResult.message,
+          resetTime: rateLimitResult.resetTime
+        }),
+        {
+          status: 429,
+          headers: {
+            'Content-Type': 'application/json',
+            'Retry-After': Math.ceil((rateLimitResult.resetTime - Date.now()) / 1000).toString(),
+            'X-RateLimit-Limit': RATE_LIMITS.LEAD_CAPTURE.maxRequests.toString(),
+            'X-RateLimit-Remaining': '0'
+          }
+        }
+      );
+    }
+
+    // Basic CSRF protection for AJAX requests
+    if (request.headers.get('content-type')?.includes('application/json')) {
+      if (!validateCSRF(request)) {
+        return new Response(JSON.stringify({
+          success: false,
+          error: 'Invalid request origin'
+        }), {
+          status: 403,
+          headers: { 'Content-Type': 'application/json' }
+        });
+      }
+    }
+
     // Handle both JSON and FormData
-    let data: any;
+    let rawData: any;
     const contentType = request.headers.get('content-type');
     
     if (contentType?.includes('application/json')) {
-      data = await request.json();
+      rawData = await request.json();
     } else {
       const formData = await request.formData();
-      data = Object.fromEntries(formData);
+      rawData = Object.fromEntries(formData);
     }
-    
-    const { 
-      email, 
-      firstName,
-      lastName,
-      name,
-      phone,
-      company,
-      website,
-      industry,
-      service,
-      message,
-      source,
-      formType,
-      leadMagnet,
-      answers 
-    } = data;
 
-    // Validate required fields
-    if (!email) {
-      return new Response(JSON.stringify({ 
-        success: false,
-        error: 'Email is required' 
+    // Bot detection
+    if (detectBot(rawData)) {
+      // Log potential bot activity but return success to avoid revealing detection
+      console.warn('Potential bot detected:', {
+        ip: clientId,
+        userAgent: request.headers.get('user-agent'),
+        timestamp: new Date().toISOString()
+      });
+      
+      return new Response(JSON.stringify({
+        success: true,
+        message: 'Thank you! Your information has been submitted successfully.'
       }), {
-        status: 400,
+        status: 200,
         headers: { 'Content-Type': 'application/json' }
       });
     }
+
+    // Validate input using Zod schema
+    const validation = validateInput(leadCaptureSchema, rawData);
     
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      return new Response(JSON.stringify({ 
+    if (!validation.success) {
+      return new Response(JSON.stringify({
         success: false,
-        error: 'Please enter a valid email address' 
+        error: 'Validation failed',
+        details: validation.errors
       }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' }
       });
     }
+
+    const data = validation.data!
 
     // Create lead data object
     const leadData: LeadData = {
-      firstName: firstName || (name ? name.split(' ')[0] : undefined),
-      lastName: lastName || (name ? name.split(' ').slice(1).join(' ') : undefined),
-      email,
-      company: company || undefined,
-      website: website || undefined,
-      phone: phone || undefined,
-      service: service || undefined,
-      message: message || (answers ? JSON.stringify(answers) : undefined),
-      source: (source || formType || 'contact_form') as any,
+      firstName: data.firstName || data.name?.split(' ')[0],
+      lastName: data.lastName || data.name?.split(' ').slice(1).join(' '),
+      email: data.email,
+      company: data.company,
+      website: data.website,
+      phone: data.phone,
+      service: data.service,
+      message: data.message,
+      source: (data.source || data.formType || 'contact_form') as any,
       timestamp: new Date(),
       userAgent: request.headers.get('user-agent') || undefined,
       referrer: request.headers.get('referer') || undefined
@@ -108,11 +141,22 @@ export const POST: APIRoute = async ({ request }) => {
       message: 'Thank you! Your information has been submitted successfully.'
     }), {
       status: 200,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 
+        'Content-Type': 'application/json',
+        'X-RateLimit-Limit': RATE_LIMITS.LEAD_CAPTURE.maxRequests.toString(),
+        'X-RateLimit-Remaining': rateLimitResult.remainingRequests.toString(),
+        'X-RateLimit-Reset': rateLimitResult.resetTime.toString()
+      }
     });
 
   } catch (error) {
-    console.error('Lead capture error:', error);
+    // Secure error logging - no sensitive data
+    console.error('Lead capture error:', {
+      timestamp: new Date().toISOString(),
+      error: error instanceof Error ? error.message : 'Unknown error',
+      ip: getClientIdentifier(request)
+    });
+    
     return new Response(JSON.stringify({ 
       success: false,
       error: 'An error occurred while processing your request. Please try again.' 
