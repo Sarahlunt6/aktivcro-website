@@ -1,0 +1,46 @@
+name = "aktivcro-website"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+[env.production]
+name = "aktivcro-website"
+routes = [
+  { pattern = "aktivcro.com/*", zone_name = "aktivcro.com" }
+]
+
+[env.preview]
+name = "aktivcro-website-preview"
+
+# Environment variables that need to be set in Cloudflare dashboard:
+# - GEMINI_API_KEY (for AI demo generation)
+# - GHL_API_KEY (for GoHighLevel integration)
+# - GHL_WEBHOOK_URL (for webhook testing)
+# - GOHIGHLEVEL_WEBHOOK_URL (alternative webhook URL)
+# - CONTACT_EMAIL (for schema markup)
+# - SITE_URL (for canonical URLs)
+# - GOOGLE_ANALYTICS_ID (for analytics)
+# - MICROSOFT_CLARITY_ID (for user behavior analytics)
+
+# Build configuration
+[[build]]
+command = "npm run build"
+
+# KV namespaces for rate limiting and caching (optional)
+# [[kv_namespaces]]
+# binding = "RATE_LIMITER"
+# id = "your-kv-namespace-id"
+# preview_id = "your-preview-kv-namespace-id"
+
+# D1 database bindings (if using Cloudflare D1)
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "aktivcro-leads"
+# database_id = "your-database-id"
+
+# R2 bucket bindings (if using Cloudflare R2 for assets)
+# [[r2_buckets]]
+# binding = "ASSETS"
+# bucket_name = "aktivcro-assets"
+
+[vars]
+NODE_ENV = "production"

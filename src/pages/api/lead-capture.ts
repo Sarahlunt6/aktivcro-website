@@ -5,7 +5,7 @@ import { formatForGHL, sendToGHL, triggerGHLWorkflow, getWorkflowId } from '../.
 import { checkRateLimit, getClientIdentifier, RATE_LIMITS } from '../../utils/rate-limiter';
 import { leadCaptureSchema, validateInput, detectBot, validateCSRF } from '../../utils/validation-schemas';
 
-// Enhanced lead capture endpoint with security features
+// Enhanced lead capture endpoint with security features (Cloudflare Workers)
 export const POST: APIRoute = async ({ request }) => {
   try {
     // Rate limiting check

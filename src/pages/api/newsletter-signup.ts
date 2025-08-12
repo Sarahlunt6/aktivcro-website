@@ -9,6 +9,7 @@ const newsletterSchema = z.object({
   website_url: z.string().max(0, 'Bot detected').optional(), // Honeypot
 });
 
+// Newsletter signup endpoint (Cloudflare Workers)
 export const POST: APIRoute = async ({ request }) => {
   try {
     // Handle CORS preflight

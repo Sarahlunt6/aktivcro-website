@@ -18,6 +18,7 @@ interface DemoRequest {
   email: string;
 }
 
+// AI-powered demo generation endpoint (Cloudflare Workers)
 export const POST: APIRoute = async ({ request }) => {
   try {
     const demoRequest: DemoRequest = await request.json();

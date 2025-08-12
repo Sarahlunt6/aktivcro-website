@@ -23,7 +23,7 @@ function verifyGHLSignature(body: string, signature: string, secret: string): bo
   }
 }
 
-// GoHighLevel webhook endpoint for receiving events from GHL
+// GoHighLevel webhook endpoint for receiving events from GHL (Cloudflare Workers)
 export const POST: APIRoute = async ({ request }) => {
   try {
     // Handle CORS preflight

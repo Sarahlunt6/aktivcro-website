@@ -31,6 +31,7 @@ const industryNames: Record<string, string> = {
   'education': 'Education'
 };
 
+// Demo generation endpoint (Cloudflare Workers)
 export const POST: APIRoute = async ({ request }) => {
   try {
     const formData: DemoFormData = await request.json();

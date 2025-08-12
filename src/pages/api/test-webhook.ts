@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
 
-// Simple test endpoint to verify webhook payload structure
+// Simple test endpoint to verify webhook payload structure (Cloudflare Workers)
 export const POST: APIRoute = async ({ request }) => {
   try {
     // Sample payload that matches what the demo generator sends

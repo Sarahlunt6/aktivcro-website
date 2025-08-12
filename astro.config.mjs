@@ -2,7 +2,7 @@
 import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 import tailwind from '@astrojs/tailwind';
-import vercel from '@astrojs/vercel';
+import cloudflare from '@astrojs/cloudflare';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,8 +13,12 @@ export default defineConfig({
       applyBaseStyles: false, // We'll use custom base styles
     })
   ],
-  output: 'server', // Server for API routes
-  adapter: vercel(),
+  output: 'server', // Server for API routes with Cloudflare Workers
+  adapter: cloudflare({
+    platformProxy: {
+      enabled: true
+    }
+  }),
   // Performance optimizations
   vite: {
     define: {
