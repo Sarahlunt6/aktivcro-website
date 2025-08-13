@@ -16,7 +16,7 @@ export default defineConfig({
       applyBaseStyles: false, // We'll use custom base styles
     })
   ],
-  output: 'hybrid', // Hybrid with mostly static pages
+  output: 'static', // Static for now to test deployment
   adapter: cloudflare({
     mode: 'directory',
     functionPerRoute: false,
