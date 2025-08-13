@@ -1,7 +1,5 @@
 import type { APIRoute } from 'astro';
 
-export const prerender = false;
-
 // Simple test endpoint to verify webhook payload structure (Cloudflare Workers)
 export const POST: APIRoute = async ({ request }) => {
   try {

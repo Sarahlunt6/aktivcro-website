@@ -8,19 +8,21 @@ import cloudflare from '@astrojs/cloudflare';
 export default defineConfig({
   site: 'https://aktivcro.com', // Required for sitemap and canonical URLs
   integrations: [
-    react(),
+    react({
+      experimentalReactChildren: true,
+    }),
     tailwind({
       applyBaseStyles: false, // We'll use custom base styles
     })
   ],
-  output: 'static', // Static for initial deployment to avoid SSR issues
-  // adapter: cloudflare({
-  //   mode: 'advanced',
-  //   functionPerRoute: false,
-  //   platformProxy: {
-  //     enabled: true
-  //   }
-  // }),
+  output: 'hybrid', // Hybrid with mostly static pages
+  adapter: cloudflare({
+    mode: 'directory',
+    functionPerRoute: false,
+    platformProxy: {
+      enabled: true
+    }
+  }),
   // Performance optimizations
   vite: {
     define: {

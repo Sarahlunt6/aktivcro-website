@@ -1,7 +1,5 @@
 import type { APIRoute } from 'astro';
 
-export const prerender = false;
-
 interface DemoFormData {
   businessName: string;
   industry: string;

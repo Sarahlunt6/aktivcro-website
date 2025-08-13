@@ -6,7 +6,6 @@ import { checkRateLimit, getClientIdentifier, RATE_LIMITS } from '../../utils/ra
 import { leadCaptureSchema, validateInput, detectBot, validateCSRF } from '../../utils/validation-schemas';
 
 // Enhanced lead capture endpoint with security features (Cloudflare Workers)
-export const prerender = false;
 export const POST: APIRoute = async ({ request }) => {
   try {
     // Rate limiting check
