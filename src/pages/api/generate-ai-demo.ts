@@ -2,6 +2,8 @@ import type { APIRoute } from 'astro';
 import { generateWebsiteContent, type BusinessInfo } from '../../utils/ai-content-generator';
 import { generateDemoTemplate } from '../../utils/demo-templates';
 
+export const prerender = false;
+
 interface DemoRequest {
   businessName: string;
   industry: string;

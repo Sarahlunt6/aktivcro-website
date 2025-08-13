@@ -13,7 +13,7 @@ export default defineConfig({
       applyBaseStyles: false, // We'll use custom base styles
     })
   ],
-  output: 'server', // Server for API routes with Cloudflare Workers
+  output: 'hybrid', // Hybrid for static pages with select server routes
   adapter: cloudflare({
     mode: 'advanced',
     functionPerRoute: false,

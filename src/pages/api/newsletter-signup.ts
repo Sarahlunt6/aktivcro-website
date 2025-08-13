@@ -4,6 +4,8 @@ import { validateInput, emailSchema } from '../../utils/validation-schemas.js';
 import { setCORSHeaders, handleCORSPreflight } from '../../utils/cors.js';
 import { z } from 'zod';
 
+export const prerender = false;
+
 const newsletterSchema = z.object({
   email: emailSchema,
   website_url: z.string().max(0, 'Bot detected').optional(), // Honeypot

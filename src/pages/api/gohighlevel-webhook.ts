@@ -3,6 +3,8 @@ import { checkRateLimit, RATE_LIMITS, getClientIdentifier } from '../../utils/ra
 import { setCORSHeaders, handleCORSPreflight } from '../../utils/cors.js';
 import { createHmac, timingSafeEqual } from 'crypto';
 
+export const prerender = false;
+
 function verifyGHLSignature(body: string, signature: string, secret: string): boolean {
   if (!signature || !secret) return false;
   
