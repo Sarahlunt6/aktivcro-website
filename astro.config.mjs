@@ -15,6 +15,8 @@ export default defineConfig({
   ],
   output: 'server', // Server for API routes with Cloudflare Workers
   adapter: cloudflare({
+    mode: 'advanced',
+    functionPerRoute: false,
     platformProxy: {
       enabled: true
     }
@@ -22,7 +24,11 @@ export default defineConfig({
   // Performance optimizations
   vite: {
     define: {
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
+      global: 'globalThis',
+    },
+    ssr: {
+      external: ['node:async_hooks']
     },
     build: {
       rollupOptions: {
@@ -48,10 +54,13 @@ export default defineConfig({
       }
     }
   },
-  // Image optimization
+  // Image optimization - Use compile time for Cloudflare compatibility
   image: {
     service: {
-      entrypoint: 'astro/assets/services/sharp'
+      entrypoint: 'astro/assets/services/sharp',
+      config: {
+        limitInputPixels: false,
+      }
     }
   },
   // Compression and optimization
