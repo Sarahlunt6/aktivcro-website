@@ -7,6 +7,7 @@ import cloudflare from '@astrojs/cloudflare';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://aktivcro.com', // Required for sitemap and canonical URLs
+  // Force deployment refresh
   integrations: [
     react({
       experimentalReactChildren: true,
