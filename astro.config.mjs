@@ -13,14 +13,14 @@ export default defineConfig({
       applyBaseStyles: false, // We'll use custom base styles
     })
   ],
-  output: 'hybrid', // Hybrid for static pages with select server routes
-  adapter: cloudflare({
-    mode: 'advanced',
-    functionPerRoute: false,
-    platformProxy: {
-      enabled: true
-    }
-  }),
+  output: 'static', // Static for initial deployment to avoid SSR issues
+  // adapter: cloudflare({
+  //   mode: 'advanced',
+  //   functionPerRoute: false,
+  //   platformProxy: {
+  //     enabled: true
+  //   }
+  // }),
   // Performance optimizations
   vite: {
     define: {
