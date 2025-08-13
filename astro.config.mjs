@@ -11,19 +11,20 @@ export default defineConfig({
   integrations: [
     react({
       experimentalReactChildren: true,
+      include: ['**/src/**/*.tsx', '**/src/**/*.jsx'],
     }),
     tailwind({
       applyBaseStyles: false, // We'll use custom base styles
     })
   ],
-  output: 'static', // Static for now to test deployment
-  adapter: cloudflare({
-    mode: 'directory',
-    functionPerRoute: false,
-    platformProxy: {
-      enabled: true
-    }
-  }),
+  output: 'static', // Pure static deployment without adapter
+  // adapter: cloudflare({
+  //   mode: 'directory', 
+  //   functionPerRoute: false,
+  //   platformProxy: {
+  //     enabled: true
+  //   }
+  // }),
   // Performance optimizations
   vite: {
     define: {
